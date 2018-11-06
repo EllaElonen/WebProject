@@ -1,26 +1,25 @@
-</html><!DOCTYPE html>
-
-<!-- Write your comments here -->
+<!DOCTYPE html>
 
 <html>
 
    <head>
+        <meta name="author" content="Ella Elonen">
+        <title>Links and quotes</title> 
        <meta charset =" utf-8">
-       <title>Links and quotes</title> 
+       <meta http-equiv="refresh" content="30">
+       
+       
    </head>
 
    <body>
        <h1 style=color:chartreuse>Links</h1>
             <p>
-                Links are marked with the a-tag containing the attribute href=sourcelink.
+                Links are written with the &lt;a&gt; containing the attribute href, defining the adress of the page you 
+                want to link to.
             </p>
 
-            <a href="https://www.w3schools.com">This is a link to w3schools that contains more information on links.</a>
-
-            <hr> 
-            <p>The hr-tag here separates the head and body of the page. It appears as a separator line, 
-                but it´s primary purpose in HTML5 is to be a semantic separator of different kinds of content. 
-            </p>
+            <a href="https://www.w3schools.com">This is a link to w3schools that contains more information on links, 
+                quotes and other important concepts in HTML.</a>
 
             <h1 style=color:cadetblue>Quotes</h1>
 
@@ -29,14 +28,22 @@
                 Block quotes can be written in blockquote tags. 
             </p>                  
 
-            <p>This illustrates a block quote from a website:</p>
+            <p>This illustrates a block quote from another website, 
+                https://www.quackit.com/html/tags/html_blockquote_tag.cfm:</p>
 
-                <blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp">
-                    The HTML <blockquote> element defines a section that is quoted from another source.
+                <blockquote>The HTML &lt;blockquote&gt; tag is used for creating the 'blockquote' element. This element represents content that is quoted from another source.
 
-                            Browsers usually indent <blockquote> elements.
-       <hr>
-   
+                        Browsers usually render &lt;blockquote&gt; text as indented text. 
+                        This results in an indented paragraph (or multiple indented paragraphs 
+                        if the &lt;blockquote&gt; spans multiple paragraphs). For shorter quoted text 
+                        that needs to display within a non-quoted paragraph, use &lt;q&gt; tag. 
+                            Most browsers surround &lt;q&gt; text with quotation marks.
+                        
+                        Syntax
+                        The &lt;blockquote&gt; tag is written as &lt;blockquote&gt;&lt;/blockquote&gt; 
+                        with the quoted content inserted between the start and end tag.
+                        Like this:                        
+                        &lt;blockquote&gt;Quoted text here...&lt;blockquote&gt;&lt;/blockquote&gt;
    </body>
 
 </html>
