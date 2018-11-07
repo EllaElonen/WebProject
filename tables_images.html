@@ -2,51 +2,48 @@
 
 <html>
 <head>
-        <title>Tables and images</title>
-        <meta name="author" content="Ella Elonen">
         <meta charset =" utf-8">
+        <title>Structure</title> 
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="Visual Studio Code 1.28.2">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta http-equiv="refresh" content="30">
         <title>Tables and images</title>
-</head>        
+</head>       
 
-<body>
-
-        <h1 style="color: coral">Representing tables</h1>
-
-        <p>Every table row is represented with the &lt;tr&gt; element.</p>
-
-    <table cellpadding="5" cellspacing="0" border="1">
-        <tbody>
-        <tr>
-            <td><b>Bold</b></td>
-            <td><b> <i>Bold italic</i></b></td>
-        </tr>
-        <tr>
-            <td>Normal</td>
-            <td>Normal</td>
-        </tr>
-        <tr>
-            <td>Normal</td>
-            <td>Normal</td>
-        </tr>
-        <tr>
-            <td>Normal</td>
-            <td>Normal</td>
-        </tr>
-        <tr>
-            <td>Normal</td>
-            <td>Normal</td>
-        </tr>
-        </tbody></table>
+        <table>
+            <tbody>
+                <colgroup span="2" style="background:rgb(72, 255, 0)"></colgroup>
+                    <tr>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                    </tr>
+                    <tr>
+                        <td>TD Table data</td>
+                        <td>TD Table data</td>
+                        <td>TD Table data</td>
+                    </tr>
+                    <tr>
+                        <td>TD Table data</td>
+                        <td>TD Table data</td>
+                        <td>TD Table data</td>
+                    </tr>
+                </tbody>
+            </table>
 
         <hr>
 
         <h1 style="color: coral">Adding pictures to your website</h1>
 
-        <p>Pictures can be added to a webpage with the img-tag, and a source attribute that gives 
-            the location of the picture. </p>
+        <p>
+            Pictures can be added to a webpage with the img-tag, and a source attribute that gives 
+            the location of the picture. 
+        </p>
 
-    <img src ="picture.jpg" alt ="picture" style="width:600px;height:400px;"">
+        <img src ="images/Sunset.jpg" alt ="Sunset" style="width:600px;height:400px;"">
 
     </body>
 </html>
