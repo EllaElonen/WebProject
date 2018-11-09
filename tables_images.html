@@ -13,48 +13,117 @@
         <title>Tables and images</title>
 </head>       
 <body>
-    <article>
-        <h1 style="color: coral">Adding pictures to your website</h1>
+    <header>
+        <h1 style="color: coral">Adding tables to your website</h1>
+    </header>
+
+    <section>
+        <p> 
+            Tables are written by writing text inside td tags for regular rows, and &lt;th&gt; for headings. 
+            Every piece of data inside the &lt;tr&gt; tags is surrounded by a &lt;td&gt;. 
+            Background color is added to columns by enclosing them in 
+            a &lt;colgroup span="2"&gt; tag.
+        </P>
+
+        <table>
+            <caption>Table heading</caption>
+            <tbody>
+                <colgroup span="2" style="background:rgb(52, 138, 19)"></colgroup>
+                <tr>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+                </tr>
+                <tr>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+                </tr>
+                <tr>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <header>
+        <h1 style="color: coral">Writing lists</h1> 
+        </header>
+
+        <div class=content>
+            <p>
+            Lists can be ordered or unordered. The following list is unorderd, written 
+            with the &lt;ul&gt; tag.
+            </p>    
+        </div>
+
+        <div class=content>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
 
         <div>
-            <table>
-                <caption>Table heading</caption>
-                <tbody>
-                    <colgroup span="2" style="background:rgb(72, 255, 0)"></colgroup>
-                    <tr>
-                        <th>Column heading</th>
-                        <th>Column heading</th>
-                        <th>Column heading</th>
-                    </tr>
-                    <tr>
-                        <td>TD Table data</td>
-                        <td>TD Table data</td>
-                        <td>TD Table data</td>
-                    </tr>
-                    <tr>
-                        <td>TD Table data</td>
-                        <td>TD Table data</td>
-                        <td>TD Table data</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>
+                The following list is orderd, written with an &lt;ol&gt; tag, 
+                including a type attribute to tell it to order with numbers. 
+                Alphabet or roman numbers are also possible. 
+            </p>   
         </div>
-    </article>
-   
+
+        <div class=content>
+                <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                      </ol>
+        </div>
+        <div class=content>
+            <p>
+                The following list also adds a description to the table, using the &lt;dt&gt; tag to 
+                define the item, followed by &lt;dd&gt; to add a description to the item. The whole list 
+                is contained by &lt;dl&gt; tags.
+            </p>
+        </div>
+
+            <div class=content>
+                <dl>
+                <dt>HTML</dt>
+                <dd>-A markup language for structuring websites</dd>
+                <dt>CSS</dt>
+                <dd>-A language for adding style to web sites</dd>
+                <dt>JavaScript</dt>
+                <dd>-A programming language used for adding behavior to websites</dd>
+                </dl>
+            </div>
+        </section>
 
         <hr>
-        <article>
-            <div class="content">
+        <section>
+            <header>
                 <h1 style="color: coral">Adding pictures to your website</h1>
+            </header>
 
-                <p>
-                    Pictures can be added to a webpage with the img tag, and a source attribute that gives 
-                    the location of the picture file. 
-                </p>
+            <p>
+                Pictures can be added to a webpage with the img tag, and a source attribute that gives 
+                the location of the picture file. 
+            </p>
 
-            <img src ="images/Sunset.jpg" alt ="Sunset" style="width:600px;height:400px;"">
-        </div>
-    </article>
+            <figure>
+                <img src ="images/Sunset.jpg" alt ="Sunset" style="width:600px;height:400px;"">
+                <figcaption>Fig.1 Sunset in Bandhagen.</figcaption>
+            </figure>
+
+            <aside>
+                <h4>Bandhagen</h4>
+                <p>Bandhagen is a suburbs South of Stockholm</p>
+            </aside>
+        </section>
 
     </body>
 </html>
