@@ -1,1 +1,0 @@
-alert('This illustrates an alert written in javascript.');
