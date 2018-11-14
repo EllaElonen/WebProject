@@ -14,41 +14,48 @@
     </head>
 
     <body>
-        <form action="" onsubmit="validate_input()">
+
+        <h1>Examples of forms</h1>
+        <form action="" onsubmit="validate_number_input()">
             First name: <input type="text" name="fname" ><br>
             Last name: <input type="text" name="lname"><br>
             Desired password: <input type="text" name="pw1" id="pw1"><br>
             Repeat password: <input type="text" name="pw2" id="pw2"><br>
+            <textarea rows="4" cols="50" placeholder="Write a longer text here"></textarea>
             <input type="submit" value="Submit">
         </form>
 
         <p> 
             Input fields are specified with the &lt;form&gt; tags, containing &lt;input&gt; tags 
-            for every input field. The input tag as a type attribute that gives the type of the input, 
+            for every input field. The input tag has a type attribute that gives the type of the input, 
             like text or password in the form above. It also has a name attribute that gives the input 
-            a name to be recognized by. For longer text input the textarea tag can be used:
+            a name, and an id attribute to be identified by. For longer text input the textarea tag can 
+            be used. In the form above the textarea has a placeholder text, specified in the placeholder 
+            attribute, giving the user a clue to what kind of input is being collected. 
         </p> 
 
-        <textarea rows="4" cols="50" placeholder="Write a longer text here. Some browsers want this text as a placeholder attribute, 
-        some want it between the two textarea tags. This text is written in both places to make sure 
-        it shows up in both Opera and Chrome..">
-             Write a longer text here. Some browsers want this text as a placeholder attribute, some want it between the two textarea tags. This text is written in both places to make sure it shows up in both Opera and Chrome. 
-        </textarea>
         <p>
             HTML5 has added the following input types: email, url, number, range, datetime-local, date, 
             month, week, time.
         </p>
 
         <form>
+            <figcaption>email</figcaption>
             <input type="email">
+            <figcaption>url</figcaption>
             <input type="url">
+            <figcaption>number</figcaption>
             <input type="number" name="quantity" min="1" max="5" step=5>
+            <figcaption>range</figcaption>
             <input type="range" name="quantity" min="1" max="5" step=5>
+            <figcaption>datetime-local</figcaption>
             <input type="datetime-local">
+            <figcaption>date</figcaption>
             <input type="date">
+            <figcaption>month</figcaption>
             <input type="month">
+            <figcaption>week</figcaption>
             <input type="week">
-            <input type="time">
         </form>
     </body>
 </html>

@@ -7,7 +7,7 @@ function match_passwords(){
     return false;
 }
 
-function printAlert(){
+function print_alert(){
     if (match_passwords()){
         alert('Passwords matched.');
     } else {
@@ -15,7 +15,7 @@ function printAlert(){
     }
 }
 
-function validateNumberInput(){
+function validate_number_input(){
     if (isNan(pw1))
         return true; 
     alert('NaN'); 
