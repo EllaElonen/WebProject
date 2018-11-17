@@ -18,10 +18,10 @@ function welcome(){
 
 function collect_items(){
     var items = [];
-    var input = prompt("What do you want to add to the array of items?")
+    var input = prompt("What do you want to add to the array of items?");
 
-    items.unshift('input') //Adds item to the beginning. Push adds to the end.
-    document.write('<p>items contains: ' + items + ' '  + + items[items.length-1] + ' ' + input + '</p>');
+    items.unshift('input'); //Adds item to the beginning. Push adds to the end.
+    document.write('<p>items contains:</p>');
     for (var i in items){
         document.write(items[i]);
     }
@@ -39,9 +39,6 @@ function print_2D_array(){
          }
     }
 
-    function print_message(){
-        var message = "Array contains" + input;
+ function print_message(){
+     var message = "Array contains" + input;
     }
-}
-
-

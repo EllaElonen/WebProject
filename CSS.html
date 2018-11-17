@@ -12,12 +12,22 @@
         <meta http-equiv="refresh" content="30">
 		
         <title>CSS</title> 
-		<!--<link href='http://fonts.googleapis.com/css?family=Varela+Round'rel='stylesheet'>-->
+		<script src="scripts/CSS.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles/index.css">
 		
     </head>
 
     <body>
+		
+	<span id=meny onclick="openNav()">&#9776; Open side menu</span> 
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Contact</a>
+	</div>  
+	
         <article>
 			<div id="logo"> Web development for beginners</div>
 			
@@ -60,7 +70,7 @@
             </p> 
         </section>
     </article>
-
+	
     <footer >
         <p>Posted by: Ella Elonen</p>
         <p>Contact information: <a href="mailto:ellaelonen@yahoo.se">Contact</a>.</p>
