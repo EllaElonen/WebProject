@@ -1,27 +1,24 @@
  
  html {
-	/*background-color:saddlebrown;*/
 	background-image: url("../images/Wood.jpg");
-   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
  
- /*#bgimg {
-    background-image: url('../images/Wood.jpg');
-}*/
-
   body {
-	margin: 30px;
+	margin: 90px;
     background-color:darkturquoise;
+	padding: 10px;
   }
-
+  
   p {
     background-color:khaki;
     color: maroon;
     font-family: Arial, "Palatino Linotype", Times, serif;
     font-size: 1em;
+	padding:50px;
   }
   
   h1, h2, h3 {
