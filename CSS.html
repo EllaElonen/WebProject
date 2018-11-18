@@ -14,19 +14,18 @@
         <title>CSS</title> 
 		<script src="scripts/CSS.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles/index.css">
-		
     </head>
 
     <body>
-		
-	<span id=meny onclick="openNav()">&#9776; Open side menu</span> 
+	<div class="content">
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
 	
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#">About</a>
-		<a href="#">Services</a>
-		<a href="#">Contact</a>
-	</div>  
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<a href="#">About</a><br />
+			<a href="#">Services</a><br />
+			<a href="#">Contact</a>
+		</div>  
 	
         <article>
 			<div id="logo"> Web development for beginners</div>
@@ -37,20 +36,55 @@
 
             <section>
 				<p>
-					xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				In order to add style to your HTML, you can apply CSS rules to HTML elements.
+				Most of the times it is best to write your CSS rules in a separate document. That 
+				way, it is easy to maintain, and you can apply the same style to all your 
+				HTML pages if you like.The following link was added to the HTML of 
+				this page, at the end of the head element: 
+				&lt;link rel="stylesheet" type="text/css" href="styles/index.css"&gt;
+				</p>
+				
+				<header>
+					<h2>
+						Basic CSS syntax
+					</h2>
+				</header>
+				
+				<p> 
+					To style your HTML elements, you first choose them with a CSS selector. For example, 
+					the following CSS selects all the paragraps in a document, where no other rule is applied.<br> 
+					<br>
+					p{<br>
+					}
 				</p>
 				<p>
-						xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+					You can also choose specific attributes in elements with the syntax <br>
+				<br>
+					p[attribute]{<br>
+					}
+				</p>
+				
+				<p>
+					You can add properties to the chosen elements, like borders. The following will add 
+					a bottom border, a line under the level 1 headlines: <br>
+				<br>
+					h1{<br>
+					border-bottom: 2px white solid<br>
+				}<br>
+					If you only add a border, without specifictions, a frame around the headline 
+					will be added.
+				<br>
+				
+				</p>
+				
+				<p>
+					The basic structure of HTML pages conssists of a root element that is marked by the 
+					&lt;html&gt; tag. Inside that, there are two branches, the ead and the body. The following CSS chooses the HTML element and adds a background 
+					picture to it. <br>
+				<br>
+				body<br>
+				
+					}
 				</p>
 				
 				<p class="note"><strong>NOTE:</strong> 	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -66,7 +100,7 @@
 				</p>
 
             <p>
-                &lt;p&gt;
+                
             </p> 
         </section>
     </article>
@@ -82,6 +116,8 @@
         <p> by Ella Elonen.</p>
         <p>All content on this site can be shared according to the GNU General Public license</p>
     </details>
+	</div>
+	</body>
  </html>
 
 

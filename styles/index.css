@@ -1,25 +1,38 @@
+ 
+ html {
+	/*background-color:saddlebrown;*/
+	background-image: url("../images/Wood.jpg");
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+ 
+ /*#bgimg {
+    background-image: url('../images/Wood.jpg');
+}*/
+
   body {
+	margin: 30px;
     background-color:darkturquoise;
-    padding: 0 20px 20px 20px;
-    margin: 0;
   }
 
   p {
     background-color:khaki;
     color: maroon;
-    font-family: Batang;
+    font-family: Arial, "Palatino Linotype", Times, serif;
     font-size: 1em;
   }
   
   h1, h2, h3 {
-    background-color: khaki;
+    background-color: aquamarine;
     color: maroon;
     font-family: Batang;
-    /*font-family: Arial, "Palatino Linotype", Times, serif;*/
     border-bottom: 2px solid aquamarine;
-      padding-top: 10px;
+    padding-top: 10px;
     padding-bottom: 5px;  
   }
+  
   h1 {
     font-size: 2em;
   }
@@ -93,15 +106,17 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
-.sidenav .meny{
+.sidenav .menu{
 	color: saddlebrown;
 	font-size:30px;cursor:pointer
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 30px;}
   .sidenav a {font-size: 18px;}
 }
   
