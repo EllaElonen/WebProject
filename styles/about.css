@@ -75,4 +75,27 @@ p.intro {
   margin-bottom: 15px;
 }
 
+  footer > p {
+    background-color:darkturquoise;
+    color: maroon;
+    font-family: Batang;
+    font-size: 1.0em;
+	padding: 0;
+  }
+  
+  details > p {
+    background-color:darkturquoise;
+    color: maroon;
+    font-family: Batang;
+    font-size: 1.0em;
+	padding: 0;
+  }
+  
+input[type="text"] {
+	font-family: Times;
+	font-size: 1.0em;
+	color: dark brown;
+}
+
+
 
