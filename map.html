@@ -9,27 +9,48 @@
         <meta name="generator" content="Visual Studio Code 1.28.2">
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta http-equiv="refresh" content="30">
-        <title>Map</title>
-      
+        <title>Interactive Maps</title>
+		<link href="styles/map.css" rel="stylesheet">
    </head>
 
    <body>
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+	
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<a href="href="about.html">About</a><br/>
+			<a href="#">Services</a><br />
+			<a href="#">Contact</a>
+		</div>  
     </article>
-        <div class=header>
-                <h1>Opening things by clicking in different places on a picture</h1>
-            <div>
+        <header>
+            <h1>Interactive Maps</h1>
+        <header>
+		
+		<section>
+			<p>
+				Click on different parts of the picture!
+			</p>
+		<section/>
 
-            </div class=content>
-                <img src="Sunset. jpg" width="145" height="126" alt="Sunset" usemap="#planetmap">
-            </div>
+            <figure>
+                <img src="images/Magnolia.png" width="300" height="200" alt="Pictures" usemap="#leavesmap">
+            </figure>
 
-            <div class=content>
-                <map name="sunsetmap">
-                    <area shape="rect" coords="0,0,82,126" href="images/Sunset.jpg" alt="Sunset">
-                    <area shape="circle" coords="90,58,3" href="images/BlowHeart.jpg" alt="BlowHeart">
-                    <area shape="circle" coords="124,58,8" href="images/Dreaming.jpg" alt="Dreaming">
-                </map>
-            </div>
-        </article>
+            <map name="leavesmap">
+                <area shape="rect" coords="0,0,100,200" href="images/BlowHeart.jpg" alt=Magnolia">
+                <area shape="circle" coords="200,50,50" href="images/Magnolia.png" alt="BlowHeart">
+                <area shape="circle" coords="250,180,50" href="images/Dreaming.jpg" alt="Dreaming">
+            </map>
+		</article>
+		
+		<div class="sidebar">
+			<h3>More on maps</h3>
+			<p>
+			    The map tag is a simple way to build interactive pictures and maps.
+				You will find another similar example, and more information here: 
+			<a href="https://www.w3schools.com/tags/tag_map.asp">W3Schools</a>
+			</p>
+		</div>
     </body>
 </html>

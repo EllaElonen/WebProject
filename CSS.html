@@ -13,7 +13,7 @@
 		
         <title>CSS</title> 
 		<script src="scripts/CSS.js"></script>
-		<link rel="stylesheet" type="text/css" href="styles/index.css">
+		<link rel="stylesheet" type="text/css" href="styles/CSS.css">
     </head>
 
     <body>
@@ -28,6 +28,7 @@
 		</div>  
 	
         <article>
+		
 			<div id="logo"> Web development for beginners</div>
 			
             <header>
@@ -36,11 +37,16 @@
 
             <section>
 				<p>
-				In order to add style to your HTML, you can apply CSS rules to HTML elements.
+				HTML provides a basic structure to a web page, consisting of elements like text, images, tables, maps etc. 
+				It does not define how these elements should be presented. That´s why you need CSS, Cascading Style Sheets, 
+				to define how you want your elements to be presented. In order to add style to your elements, you can apply 
+				CSS rules to selected HTML elements. For example, you can add a certain type and size of fonts, a certain color,
+				margins, space, or a background picture that is not part of the semantic content, but a purely presentational thing. 
+				
 				Most of the time it is best to write your CSS rules in a separate document. That 
 				way, it is easy to maintain, and you can apply the same style to all your 
 				HTML pages if you like. The following link was added to the HTML of 
-				this page, at the end of the head element: <br/>
+				this page, at the end of the head element, in order to link it to the CSS file: <br/>
 				&lt;link rel="stylesheet" type="text/css" href="styles/index.css"&gt;
 				</p>
 				
@@ -60,15 +66,20 @@
 				<p>
 					The script above will identify all elements on a certain level, for example all paragraphs. If you just want 
 					to choose certain paragraphs, you will have to use a class selector. You could, for example, create a 
-					classstyle called  .address, and apply it to all paragraphs consisting of an address.<br>
+					classstyle called  .address, and apply it to all paragraphs consisting of an address.
+				</p>
+					
+				<p>
+				The following syntax identifies that have a certain attribute with a certain value - all input that has 
+				the type text. This is very useful for presenting input in forms. 
+					<br>
 				<br>
-					p[attribute]{<br>
+					input[type="text"]{<br>
 					}
 				</p>
-				
 				<p>
 					You can add properties to the chosen elements, like borders. The following will add 
-					a bottom border, a line under the level 1 headlines: <br>
+					a bottom border, a line under all level 1 headlines: <br>
 				<br>
 					h1{<br>
 					border-bottom: 2px white solid<br>
@@ -76,17 +87,19 @@
 					If you only add a border, without specifictions, a frame around the headline 
 					will be added.
 				<br>
-				
 				</p>
-				
 				<p>
 					The basic structure of HTML pages conssists of a root element that is marked by the 
-					&lt;html&gt; tag. Inside that, there are two branches, the head and the body. The following CSS chooses the HTML element and adds a background 
-					picture to it. <br>
+					&lt;html&gt; tag. Inside that, there are two branches, the head and the body. The following CSS chooses the HTML 
+					element and adds a background picture to it. <br>
 				<br>
-				body<br>
-				
+				html {<br>
+					background-image: url("../images/Wood.jpg");
 					}
+				</p>
+				<p>
+				This is important to know for the use of inheritance. The selector body &gt; p selects any paragraph element 
+				that is a child of the body.
 				</p>
 				
 				<p class="note"><strong>NOTE:</strong> 	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

@@ -1,0 +1,5 @@
+
+var alt;
+
+function showResult{
+}

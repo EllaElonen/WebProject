@@ -1,8 +1,8 @@
 
 
-function print_cookie_monster(){
-    var firstName = 'Cookie';
-    var lastName = 'monster';
+function print_welcome_message(){
+	var welcome = "hello";
+    var name = reader;
     
     document.write('<p>');
     document.write(firstName + " " + lastName);
