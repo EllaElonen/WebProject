@@ -11,34 +11,36 @@
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta http-equiv="refresh" content="30">
         <title>Headings and Paragraphs</title> 
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+		<link href="styles/headings_paragraphs.css" rel="stylesheet">
    </head>
 
     <body>
         <section>
             <header>
-                <h1 style="color:Blue">Headings</h1>
+			<div id="banner">
+				<h1>Headings and paragraphs<h1>
+			</div>
+                <h2>Headings</h2>
             </header>
 
             <div class=content>
                 <p>
-                    HTML-headigs come in different sizes. The style and color of the headings on this page is chosen with pure HTML
-                    The heading you see above is heading 1, which is the biggest. Other examples are:
+                    In HTML, you can use different levels of headings that you can attach different styles to. They are tagged with 
+					h1, h2, h3 and so on. Here are some examples, with different style rules applied to them. 
+					All headings on the same level usually have the same style. 
                 </p>
 
-                <h2 style="color:aqua"> Heading h2 aqua</h2>
-                <h3 style="color:DodgerBlue;">Heading h3 in Dodger Blue</h3>
-                <h4 style="color: aquamarine;">Heading h4 aquamarine</h4>
-                <h5 style="color: cornflowerblue;">Heading h5 cornflowerblue</h5>
-                <h6 style="color:rgb(84, 172, 172);">Heading h6 rgb(84, 172, 172);</h6>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
             </div>
         <section>
             
         </section>
             <header>
-                <h1>Paragraphs</h1>
+                <h2>Paragraphs</h2>
             </header>
                 
             <p>
@@ -53,8 +55,8 @@
                 accomplished with the br-tag after each line.
             </p>
 
-            <pre style="font-family:verdana;">
-                This is a paragraph enclosed with the pre-tag that preserves tabs and line breaks, styled in verdana.
+            <pre>
+                This is a paragraph enclosed with the pre-tag that preserves tabs and line breaks.
             </pre>
  
             <i>This text is in italic, written inside &lt;i&gt; tags.</i>
@@ -64,10 +66,8 @@
                 </EM>
             </p>
  
-            <p> <strong> This text is strong. </strong> </p>
- 
-            <p style="background-color:aquamarine;">
-            This is a paragraph with a style attribute defining an aquamarine-coloured background. </p>
+            <p> <strong> This text is strong. It might appear in bold by default in the browser, but it´s really just 
+			a semantic tag, and you can apply whatever style yu like to the sections marked as strong.</strong> </p>
         </section>
 
         <section>
