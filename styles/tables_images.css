@@ -12,9 +12,8 @@ html {
 	background-image: url("../images/Wood.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	position: relative;
-    background-size: 300px 100px;
 	background-size: cover;
+	position: relative;
 }
 
 body{
@@ -97,20 +96,30 @@ input[type="text"] {
 }
 
 .colgroup{
-	bckground-color:red;
+	color:white;
 }
+
 tr:nth-child(odd){
 	background-color:coral;
-	background-color:orange;
 }
+
 tr:nth-child(even){
 	background-color:orange;
 }
 
-li:nth-child(5){
+li:nth-child(1){
+	color:purple;
+}
+
+li:nth-child(2){
+	color:crimson;
+}
+
+li:nth-child(3){
 	color:red;
 }
 
-table > caption{
-	color: darkbrown;
+table, th, td {
+   border: 1px solid black;
+}
 
