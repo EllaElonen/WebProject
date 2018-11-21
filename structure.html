@@ -11,13 +11,25 @@
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta http-equiv="refresh" content="30">
         <title>Structure</title> 
+		<link href="styles/structure.css" rel="stylesheet">
+		<script src="scripts/CSS.js"></script>
 		
     </head>
 
     <body>
+	<div class="content">
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+	
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<a href="#">About</a><br />
+			<a href="#">Services</a><br />
+			<a href="#">Contact</a>
+		</div>  
+		
         <article>
             <div class=header>
-                <h1 style="font-size:60px; color: rgb(0, 255, 170);">The structure of an HTML page</h1>
+                <h1>The structure of an HTML page</h1>
             </div> 
 
             <div class=content>
@@ -48,16 +60,6 @@
     </article>
 
 	<footer>
-		Posted by: Ella Elonen
-		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
-	</footer>
-
-	<details>
-		<summary> Copyright 2018-2021.</summary>
-		<p> by Ella Elonen.</p>
-		<p>All content on this site can be shared according to the GNU General Public license</p>
-	</details>
-		<footer>
 		Posted by: Ella Elonen
 		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
 	</footer>

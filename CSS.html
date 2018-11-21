@@ -22,13 +22,12 @@
 	
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
-			<a href="#">About</a><br />
-			<a href="#">Services</a><br />
+			<a href="about.html">About</a><br />
+			<a href="">Services</a><br />
 			<a href="#">Contact</a>
 		</div>  
 	
-        <article>
-		
+        <article>	
 			<div id="logo"> Web development for beginners</div>
 			
             <header>
@@ -90,16 +89,25 @@
 				</p>
 				<p>
 					The basic structure of HTML pages conssists of a root element that is marked by the 
-					&lt;html&gt; tag. Inside that, there are two branches, the head and the body. The following CSS chooses the HTML 
-					element and adds a background picture to it. <br>
+					&lt;html&gt; tag. Inside that, there are two branches, the head and the body, which again have branches inside 
+					them. When you choose to give a certain feature to a branch, everything inside that branch inherits the feature too. For example, 
+					every table row is a child to the table body and inherits features from it, if you haven´t told it anything else.
+					The table body, in turn, is a child of the table. You could use CSS selectors to choose specific children and 
+					grandchildren, and give them features. 
+					The following CSS chooses the HTML element and adds a background picture to it. <br>
 				<br>
 				html {<br>
-					background-image: url("../images/Wood.jpg");
+					background-image: url("../images/Wood.jpg");<br>
 					}
 				</p>
 				<p>
-				This is important to know for the use of inheritance. The selector body &gt; p selects any paragraph element 
-				that is a child of the body.
+				The selector body &gt; p selects any paragraph element 
+				that is a child of the body. For example, "details &gt; p" chooses every paragraph that is a child of a detail 
+				element. The following syntax chooses every even row in a table and gives it an orange color.<br>
+				<br>
+				tr:nth-child(even){<br>
+					background-color:orange;<br>
+					}
 				</p>
 				
 				<p class="note"><strong>NOTE:</strong> 	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -109,14 +117,6 @@
 				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 				</p>
-        
-				<p> 
-                
-				</p>
-
-            <p>
-                
-            </p> 
         </section>
     </article>
 	

@@ -33,6 +33,14 @@
 	padding:50px;
   }
   
+    pre {
+    background-color:khaki;
+    color: maroon;
+    font-family: Arial, "Palatino Linotype", Times, serif;
+    font-size: 1em;
+	padding:50px;
+  }
+  
   h1, h2, h3 {
     background-color: aquamarine;
     color: maroon;

@@ -12,10 +12,10 @@ html {
 	background-image: url("../images/Wood.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
 	position: relative;
+    background-size: 300px 100px;
+	background-size: cover;
 }
-
 body{
 	font-family: "Palatino Linotype", Baskerville, serif;
 	padding-top: 115px;
@@ -23,7 +23,7 @@ body{
 	background-image: url("../images/Dreaming.jpg") no-repeat;
 	max-width: 800px;
 	margin: 90px;
-	padding: 10px;
+	padding: 30px;
 }
 
 .corner-image{
@@ -95,10 +95,6 @@ input[type="text"] {
 	color: dark brown;
 }
 
-.colgroup{
-	color:white;
-}
-
 tr:nth-child(odd){
 	background-color:coral;
 }
@@ -121,5 +117,12 @@ li:nth-child(3){
 
 table, th, td {
    border: 1px solid black;
+
+table > caption{
+	color: blue;
+}
+
+colgroup{
+	color: yellow;
 }
 

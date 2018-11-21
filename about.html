@@ -10,9 +10,21 @@
 		<meta http-equiv="refresh" content="30">
 		<title>About This Website</title>
 		<link href="styles/about.css" rel="stylesheet">
+		<script src="scripts/CSS.js"></script>
 	</head>
-
+		
 	<body>
+	
+	<div class="content">
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+	
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<a href="#">About</a><br />
+			<a href="#">Services</a><br />
+			<a href="#">Contact</a>
+		</div>  
+		
 		<figure class="corner-image">
 			<img src="images/WhiteFlower.png">
 		</figure>
