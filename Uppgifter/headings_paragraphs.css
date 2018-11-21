@@ -1,33 +1,65 @@
-html {
-	background-image: url("../images/WoodLeaves.jpg");
-	background-repeat: repeat;
-}
-
- #logo {
-    font-family: Batang;
-    font-size: 1.8em;
-    color: springgreen;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 0 0 10px 10px;
-    padding: 10px;
-  }
-
 .main {
 	float: left;
 	width: 70%;
 }
-
 .sidebar {
 	margin-left: 75%;
 	padding: 15px;
 	background: springgreen;
-	margin-top: 0%
-	margin-top:0%;
 }
 
- .sidenav {
+html {
+	background-image: url("../images/Wood.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+    background-size: 300px 100px;
+	background-size: cover;
+	padding-right: 0px;
+}
+
+body{
+	font-family: "Palatino Linotype", Baskerville, serif;
+	padding-top: 115px;
+	background-color: deepskyblue;
+	max-width: 800px;
+	margin: 120px;
+	margin-top:50px;
+	padding: 10px;
+}
+
+#banner{
+	Background-image: url(../images/WoodLeaves.jpg);
+	font-size:2em;
+	font-family: Baskerville;
+	padding-left: 300px;
+	padding:10px;
+	padding-left:210px;
+	margin: 60px;
+	margin-bottom:20px;
+}
+
+#banner h1{
+	
+	color: salmon;
+	font-size:0,0em;
+	font-family: Baskerville;
+	margin-right:10px;
+	line-height:0.7em;
+	padding-bottom:0px;
+	padding-left:50px;
+}
+
+
+.corner-image{
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-right:10px;
+	padding-top: 10px;
+}
+  .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -72,46 +104,45 @@ html {
   .sidenav {padding-top: 30px;}
   .sidenav a {font-size: 18px;}
 }
-html {
-	background-image: url("../images/Wood.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-    background-size: 300px 100px;
-	background-size: cover;
-}
-
-body{
-	font-family: "Palatino Linotype", Baskerville, serif;
-	padding-top: 115px;
-	background-color: skyblue;
-	background-image: url("../images/WoodLeaves.jpg") no-repeat;
-	max-width: 800px;
-	margin: 90px;
-	padding: 10px;
-}
-
-map {
-    display: inline;
-}
 
 h1 {
-  font-size: 3em;
-  color: seagreen;
+  font-size: 2.6em;
+  color: salmon;
   font-family: "Arial Black", Arial, sans-serif;
   margin-bottom: 15px;
 }
 h2 {
-  font-size: 2.2em;
-  color: seagreen;
+  font-size: 2.5em;
+  color: fuchsia;
+  font-family:Batang;
   margin-bottom: 5px;
 }
 
 h3 {
   font-size: 2.2em;
-  color: seagreen;
+  color: violet;
+  font-family:Times;
   margin-bottom: 5px;
 }
+h4 {
+  font-size: 1.7em;
+  color:plum;
+  font-family:Baskerville;
+  margin-bottom: 5px;
+}
+h5 {
+  font-size: 1.2em;
+  color:fuchsia;
+  font-family:verdana;
+  margin-bottom: 5px;
+}
+h6 {
+  font-size: 0.7em;
+  color:white;
+  font-family:abadi;
+  margin-bottom: 5px;
+}
+
 .main h2 {
   color: seagreen;
   border-bottom: 2px white solid;
@@ -133,18 +164,28 @@ p.intro {
   margin-bottom: 15px;
 }
 
-  footer p {
+  footer > p {
     background-color:darkturquoise;
     color: maroon;
     font-family: Batang;
-    font-size: 00,5em;
+    font-size: 1.0em;
+	padding: 0;
   }
   
-  details p {
+  details > p {
     background-color:darkturquoise;
     color: maroon;
     font-family: Batang;
-    font-size: 00,5em;
+    font-size: 1.0em;
+	padding: 0;
   }
+  
+input[type="text"] {
+	font-family: Times;
+	font-size: 1.0em;
+	color: dark brown;
+}
+
+
 
 

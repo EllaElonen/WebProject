@@ -10,11 +10,8 @@
 
 html {
 	background-image: url("../images/Wood.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-    background-size: 300px 100px;
-	background-size: cover;
+	background-repeat: repeat;
+	
 }
 body{
 	font-family: "Palatino Linotype", Baskerville, serif;
@@ -95,13 +92,29 @@ input[type="text"] {
 	color: dark brown;
 }
 
-tr:nth-child(odd){
+#classic tr:nth-child(odd){
 	background-color:coral;
 }
 
-tr:nth-child(even){
+#classic tr:nth-child(even){
 	background-color:orange;
+} 
+
+table{
+	  border: 1px solid black;
 }
+
+colgroup {
+   background-color:beige;
+}
+
+table > caption {
+	color: darkbrown;
+}
+
+table > .colgroup {
+	display: table-column-group;
+} 
 
 li:nth-child(1){
 	color:purple;
@@ -115,14 +128,6 @@ li:nth-child(3){
 	color:red;
 }
 
-table, th, td {
-   border: 1px solid black;
 
-table > caption{
-	color: blue;
-}
 
-colgroup{
-	color: yellow;
-}
 
