@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <meta charset =" utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta http-equiv="refresh" content="3000">
+        <title>Text and Lists</title>
+		<link href="styles/text_listor.css" rel="stylesheet">
+</head>       
+
+<body>
+	<section>
+		<header>
+			<h1>CSS fonts</h1>
+			<p>
+				You can use the font-family property to specify the font in which you want the element to be presented.
+				There are lots of fonts you can use in CSS, but all are not supported by all browsers. Otherwise, 
+				it is possible to choose a preferred font, and a safe option to fall back on. For example, font-family: Arial, Times, sans-serif; 
+				will give the browser Arial font-type to try, otherwise it will fall back on Times. 
+				The following table presents some examples of fonts.
+				
+				There are three generic families of fonts: Serif, sans-serif, and monospace. Serifs are small end lines in some letters, 
+				Monospace means fixed-width letters. that you can choose to have, or go without (sans-serif). Sans-serif might be 
+				easier to read on a browser screen. 
+			</P>
+			
+			<table>
+			<caption>Examples of Fonts</caption>
+		
+			<tbody>
+				<tr>
+					<th>Generic family</th>
+					<th>Font family</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Serif</td>
+					<td>Times new Roman<br>Georgia</td>
+					<td>Some characters have small extra lines at the end.</td>
+				</tr>
+				<tr>
+					<td>Sans-serif</td>
+					<td>Arial<br>Verdana</td>
+					<td>Without endlines</td>
+				</tr>
+				<tr>
+					<td>Monospace</td>
+					<td>Courier New<br>Lucida Console</td>
+					<td>Always the same character width</td>
+				</tr>
+			</tbody>
+		<table/>
+
+        <p>
+			The font-size property defines the size of the fonts the chosen text will be presented in. The property "font-size-adjust"
+			means that the font will be adjusted, in case the browser needs to go for the second choice of fonts. For example:   
+			font-size-adjust: 0.58; (the aspect value of Verdana) is applied in the red text <span class="red">verdana that 
+			might be replaced with times.</span>
+        </p>    
+		
+		<p>
+			The font-size can be set to <span class="medium">medium</span>, <span class ="xx-small">xx-small</span>, 
+			<span class="x-small">medium</span>, <span class="small">small</span>
+			<span="large">large</span>, <span="xx-large">xx-large</span>, <span="x-large">x-large</span>, 
+			<span class="smaller">smaller</span> (than parent), or <span class="larger">larger</span> (than parent). 
+			Other options are setting the length to a certain <span class="50%">percentage</span>, or relative length, for example  
+			<span class="25em">25em</span>. It can be set to be inherited from a <span class="inherited">parent</span>
+			or set back to <span class="initial"">initial</span>. 
+		</p>
+		
+		<p> 
+			The font style property can be set to <span class="italic">italic</span> or <span class="oblique">oblique</span>. 
+			It can also be set to inherit the style from its parent, or that style can be set to initial. 
+			For example, you an set the rest of a div element to italic, but a heading to it´s original normal font-style. 
+		</p> 
+		
+		<p>
+			The font-variant property specifies if the text should be written in <span class="small-caps">small-caps</span> or normal. 
+			Font-weight can be <span class="bold">bold</span>, normal or it can be set in numbers in the range 
+			<span class="thinnest">100</span>-<span class="thickest">900</span>.
+		</P>
+		
+		<p> 
+			The <span class="letterspaced">letter spacing property</span> increases and decreases the space between characters. 
+			<span class="wordspaced">Word spacing</span> does the same with the space between words.
+			The line height property can change the <span class="height">line height</span> (the height of this line is 2). 
+			
+		<p>
+			With the property text-decoration you can write <span class="underlined">underlined</span>, 
+			<span class="overlined">overlined</span>, <span class="line-through">line-through</span> and 
+			<span class="underlinedoverlined">underlined and overlined</span> text.
+		</p>
+		
+		<p>
+			With text-shadow you can add <span class="shadowed">shadows in different colors</span> to your text. 
+		</P>
+		
+		<p class="indented">With text-indent, you can indent text in paragraphs as you like. </p>.
+		
+		<p class="left"> This paragraph is left-centered.</p>
+		<p class="right"> This paragraph is right-centered.</p>
+		<p class="centered"> This paragraph is centered.</p>
+		<p class="justified"> This paragraph is justified.</p>
+		
+		<p>The property text-transformed can create text that is <span class="uppercase">uppercase</span>, 
+		<span class="lowercase">lowercase</span> and <span class="capitalized">capitalized (initials)</span>.
+		
+		<p> With the white-space property you can change the handling of whitespaces in a text. Some examples:</P>
+		
+		<p class="no-wrap">no-wrap: This is some text. This is some text. This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. 
+		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.</P>
+		
+		<p class="normal">normal: This is some text. This is some text. This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. 
+		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.</P>
+		
+		<p class="pre">pre: This is some text. This is some text. This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. 
+		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.</P>
+	
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+
+        <p>
+            The following list is orderd, written with an &lt;ol&gt; tag, 
+            including a type attribute to tell it to order with numbers. 
+            Alphabet or roman numbers are also possible. 
+        </p>   
+
+        <ol>
+            li>Item</li>
+            li>Item</li>
+            <li>Item</li>
+        </ol>
+    <p>
+ 
+            </p>
+
+                <dl>
+                <dt>Item</dt>
+                <dd>-Description</dd>
+                <dt>Item</dt>
+                <dd>-Description</dd>
+                <dt>Item</dt>
+                <dd>-Description</dd>
+                </dl>
+
+    <hr>
+    <figure>
+        img src ="images/Sunset.jpg" alt ="Picture" style="width:600px;height:400px;"">
+		<figcaption>Fig.1 Sunset in Bandhagen.</figcaption>
+       </figure>
+			
+	<footer>
+		Posted by: Ella Elonen
+		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	</footer>
+
+	<details>
+		<summary> Copyright 2018-2021.</summary>
+		<p> by Ella Elonen.</p>
+		<p>All content on this site can be shared according to the GNU General Public license</p>
+	</details>
+    </body>
+</html>

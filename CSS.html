@@ -7,7 +7,7 @@
         <meta name="author" content="Ella Elonen">
         <meta name="description" content="Free Web Tutorials">
         <meta name="keywords" content="HTML">
-        <meta name="generator" content="Visual Studio Code 1.28.2">
+        <meta name="generator" content="0">
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta http-equiv="refresh" content="30">
 		
@@ -23,7 +23,7 @@
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
 			<a href="about.html">About</a><br />
-			<a href="">Services</a><br />
+			<a href="#">Services</a><br />
 			<a href="#">Contact</a>
 		</div>  
 	
@@ -35,23 +35,27 @@
             </header> 
 
             <section>
+				<header>
+					<h2>
+						How to Add CSS to Your Webpage
+					</h2>
 				<p>
-				HTML provides a basic structure to a web page, consisting of elements like text, images, tables, maps etc. 
-				It does not define how these elements should be presented. That´s why you need CSS, Cascading Style Sheets, 
-				to define how you want your elements to be presented. In order to add style to your elements, you can apply 
-				CSS rules to selected HTML elements. For example, you can add a certain type and size of fonts, a certain color,
-				margins, space, or a background picture that is not part of the semantic content, but a purely presentational thing. 
+					HTML provides a basic structure to a web page, consisting of elements like text, images, tables, maps etc. 
+					It does not define how these elements should be presented. That´s why you need CSS, Cascading Style Sheets, 
+					to define how you want your elements to be presented. In order to add style to your elements, you can apply 
+					CSS rules to selected HTML elements. For example, you can add a certain type and size of fonts, a certain color,
+					margins, space, or a background picture that is not part of the semantic content, but a purely presentational thing. 
 				
-				Most of the time it is best to write your CSS rules in a separate document. That 
-				way, it is easy to maintain, and you can apply the same style to all your 
-				HTML pages if you like. The following link was added to the HTML of 
-				this page, at the end of the head element, in order to link it to the CSS file: <br/>
+					Most of the time it is best to write your CSS rules in a separate document. That 
+					way, it is easy to maintain, and you can apply the same style to all your 
+					HTML pages if you like. The following link was added to the HTML of 
+					this page, at the end of the head element, in order to link it to the CSS file: <br/>
 				&lt;link rel="stylesheet" type="text/css" href="styles/index.css"&gt;
 				</p>
 				
 				<header>
 					<h2>
-						Basic CSS syntax
+						The Basic Structure and Syntax of CSS
 					</h2>
 				</header>
 				
@@ -110,14 +114,48 @@
 					}
 				</p>
 				
-				<p class="note"><strong>NOTE:</strong> 	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				<p class="note"><strong>NOTE:</strong> 	A CSS document concists of selectors, 
+				each one followed by curly brackets. The selector chooses one or more elements in HTML that you want to apply 
+				that style to, and then you define the style inside the brackets. The selectors can select tags, attributes, classes, 
+				ID´s or certain children in the hierarchy. 
 				</p>
         </section>
+		<section>
+			
+			<header>
+				<h2>The measuring units in CSS<h2/>
+			<header/>
+			
+			<p>
+				CSS has many units for measuring. CSS has no particular restrictions, so you can normally choose freely which element 
+				you want to use. Some units are absolute, which means that they mean the same thing everywhere, inside and outside 
+				of CSS. Some are relative, which means they will be adapted to the context, for example depending on wheter you use 
+				a mobile phone for viewing them, a small laptop or a stationary computer. This explains why absolute units are not necessarily
+				very useful.
+			<p/>
+			
+			<header>
+				<h3>Absolute Units<h3/>
+			<header/>
+			
+			<p>
+				An example of a unit is the pixel, px. This is basically a minimal point on the screen. CSS defines it as 
+				1/96 of an inch in a printed version of the document. Other absolute measurement units are cm, mm, in, 
+				which mean the same thing they would outside CSS - different length units. The unit pt stands for points 
+				(1/72 of an inch), and pc for picas (1pc = 12 pt).
+			<p/>
+			
+			<header>
+				<h3>Absolute Units<h3/>
+			<header/>
+			
+			<p>
+				An example of a relative unit is em, which is simply the font size. 
+			<p/>
+			
+			<p>
+				A rarely used unit is ex, which means "relative to the current font´s x-height".
+			</p>
     </article>
 	
 	<footer>
