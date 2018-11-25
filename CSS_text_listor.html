@@ -14,11 +14,12 @@
 </head>       
 
 <body>
+	<h1>Text and lists</h1>
 	<section>
 		<header>
-			<h1>CSS fonts</h1>
+			<h2>How to style your text</h2>
 			<p>
-				You can use the font-family property to specify the font in which you want the element to be presented.
+				You can use the <span>font-family</span> property to specify the font in which you want the element to be presented.
 				There are lots of fonts you can use in CSS, but all are not supported by all browsers. Otherwise, 
 				it is possible to choose a preferred font, and a safe option to fall back on. For example, font-family: Arial, Times, sans-serif; 
 				will give the browser Arial font-type to try, otherwise it will fall back on Times. 
@@ -123,43 +124,111 @@
 		<p class="pre">pre: This is some text. This is some text. This is some text. This is some text. This is some text.
 		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. 
 		This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.</P>
+		
+		<p class="firstline"> 
+			The :first-line selector can be used to the the first line in a paragraph a different style. The style will not 
+			be applied to the rest of the paragraph. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+			
+		<p class="firstletter">You can also style the first letter of every paragraph</p>
+		<p class="firstletter">with the :first-letter selector,</p>
+		<p class="firstletter"> like what you see here.</p>
 	
-        <ul>
+	<h2>Lists</h2>
+	
+	<p>
+		This unordered list gets squares from a url with the help of the list-style property.
+	</p>
+	
+        <ul class="ls">
             <li>Item</li>
             <li>Item</li>
             <li>Item</li>
         </ul>
 
         <p>
-            The following list is orderd, written with an &lt;ol&gt; tag, 
-            including a type attribute to tell it to order with numbers. 
-            Alphabet or roman numbers are also possible. 
+            The list-style property is actually shorthand for three other properties: list-style-image, 
+			list-style-type and list style-position. The following list uses list-style-image to do the same as the list above. 
         </p>   
+		
+		 <p>
+            More examples of list properties in ordered and unordered lists, and options that you can set them to: 
+        </p> 
+		
+		<ul class="lsi">
+            <li>Property name: list-style-image</li>
+            <li>Set to: url</li>
+            <li>Etc.</li>
+        </ul>
+		
+		<ul class="lsp-o">
+            <li>Property name: list-style-position</li>
+            <li>Set to: outside</li>
+            <li>Etc.</li>
+        </ul>
+		
+		<ul class="lsp-i">
+            <li>Property name: list-style-position</li>
+            <li>Set to: inside</li>
+            <li>Etc.</li>
+        </ul>
+		
+		
+		<ul class="lst-s">
+            <li>Property name: list-style-type</li>
+            <li>Set to: square</li>
+            <li>Etc.</li>
+        </ul>
+		
+		<ul class="lst-c">
+            <li>Property name: list-style-type</li>
+            <li>Set to: circle</li>
+            <li>Etc.</li>
+        </ul>
 
-        <ol>
-            li>Item</li>
-            li>Item</li>
-            <li>Item</li>
+        <ol class="lst-l">
+            <li>Property name: list-style-type</li>
+            <li>Set to: lower-alpha</li>
+            <li>Etc.</li>
         </ol>
-    <p>
+		
+		 <ol class="lst-u">
+            <li>Property name: list-style-type</li>
+            <li>Set to: upper-roman</li>
+            <li>Etc.</li>
+        </ol>
+
+        <dl class="">
+            <dt>Item</dt>
+            <dd>-Description</dd>
+            <dt>Item</dt>
+            <dd>-Description</dd>
+            <dt>Item</dt>
+            <dd>-Description</dd>
+            </dl>
+
+    <ol>
  
-            </p>
-
-                <dl>
-                <dt>Item</dt>
-                <dd>-Description</dd>
-                <dt>Item</dt>
-                <dd>-Description</dd>
-                <dt>Item</dt>
-                <dd>-Description</dd>
-                </dl>
-
-    <hr>
-    <figure>
-        img src ="images/Sunset.jpg" alt ="Picture" style="width:600px;height:400px;"">
-		<figcaption>Fig.1 Sunset in Bandhagen.</figcaption>
-       </figure>
-			
+<li>List item 1 </li>
+ 
+ 
+<li>List item 2 (child list)
+ 
+<ul>
+ 
+<li>Subitem 1</li>
+ 
+ 
+<li>Subitem 2</li>
+ 
+</ul>
+ 
+</li>
+ 
+ 
+<li>Final list item</li>
+ 
+</ol>
 	<footer>
 		Posted by: Ella Elonen
 		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
