@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <meta charset =" utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta http-equiv="refresh" content="3000">
+        <title>Structure </title>
+		<link href="styles/margins.css" rel="stylesheet">
+	</head>       
+	<body>
+		<article>
+			<section>
+				<header>
+					<h1>The Box Model of CSS: Margins, borders,padding and other useful properties.</h1>
+				</header>
+        
+				<p class="box"> 
+					CSS is based on a box model, illustrated by this paragraph. The element itself, including the empty space 
+					around it it called padding, is lightgreen, and around it there is a solid springgreen border. Te margins are 
+					the space around the element and its borders. The top and bottom margins are wider, which is why there is 
+					more space between this paragraph and the heading, and this and next paragraph. Around the borders of the element there´s a double, seagreen 
+					outline. The difference between margins and padding is that margins define the space inside the borders of an element, 
+					padding the space outside. 
+				</P>
+	
+				<header>
+					<h2>Margins</h2>
+				</header>
+		
+				<p class="margin"> 
+					Margins define the space outside the borders of an element, which means outside the colored area,
+					if you have added background-color to your element. This paragraph has a margin of 70em. 
+				</P>
+				<p class="margins"> 
+					This paragraph defines each margin separately; margin-top: 100px; margin-bottom: 100px; margin-right: 150px;
+					margin-left: 80px;.
+				</P>
+			</section>
+			
+			<section>
+				<header>
+					<h2>Borders</h2>
+				</header>
+		
+				<p class="border-color">
+					The border property has options to use border-color and other styles applied to the border. The border around 
+					this paragraph has a solid style and a coral color applied to it. The style needs to be defined 
+					before the color, otherwise te color has no effect. 
+				</p>
+	
+				<p class="left">
+					This paragraph has a border-left-color. 
+				</p>
+	
+				<p class="right">
+					This paragraph has a border-right-color. 
+				</p>
+	
+				<p class="top">
+					This paragraph has a order-top-color. 
+				</p>
+	
+				<p class="bottom">
+					This paragraph has a border-bottom-color. 
+				</p>
+				
+				<p class="thin">
+					The width of the borders can also be defined in it´s own property. This paragraph has a thin border-width.
+				</p>
+				
+				<p class="thick">
+					This paragraph has a thick border-width-bottom and 
+					border-width-top, and a medium border-width-left and border-width-right.
+				</p> 
+				
+			</section>
+		
+			<section>
+				<header>
+					<h2>Padding</h2>
+				</header>
+		
+				<p class="padding"> 
+					Padding is the space around the contents of an element, but still inside its borders (inside the colored area here). 
+					For example, the headings on this page have a padding defined, 
+					in order to make the colored area around it bigger, so the first letter does not start exactly at the border. 
+					The padding of these headings is 20 px on the left (padding-left), and 10 px above and below (padding-top,padding-bottom).
+					This paragraph has an increased padding, compared with other paragraphs (100 px). That shows up as 
+					empty space inside the color frame. 
+				</P>
+				<p class="leftbottomtop">
+					This paragraph has padding-left, padding-top, padding-bottom 120 and padding-right 0.
+				</p>
+				
+				<p class="dotted">
+					Elements can also have different outlines around them. This paragraph, for example, has a dotted outline, 
+					and a solid border to illustrate the difference between border outline. The outline property also has 
+					values dashed, solid, double, groove, ridge, inset, outset. 
+				</p>
+				</section>
+				
+				<section>				
+				<h2 class="a">Visibility</h2>
+				<h2 class="b">Heading with visibility hidden.</h2>
+				
+				<p>The above headings illustrate the property of visibility. The first one is set to visibility: visible. 
+				What you do not see is another h2 "Heading with visibility: hidden". It still takes space 
+				on the page, although you don´t see it.</p>				
+				
+			</section>	
+			<section>
+				<figure>
+				<img src ="images/Sunset.jpg" alt ="Sunset" style="width:600px;height:400px;"">
+				<figcaption>Fig.1 Sunset in Bandhagen.</figcaption>
+				</figure>
+			</section>
+		</article>
+			
+		<footer>
+			Posted by: Ella Elonen
+			<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+		</footer>
+
+		<details>
+			<summary> Copyright 2018-2021.</summary>
+			<p> by Ella Elonen.</p>
+			<p>All content on this site can be shared according to the GNU General Public license</p>
+		</details>
+    </body>
+</html>

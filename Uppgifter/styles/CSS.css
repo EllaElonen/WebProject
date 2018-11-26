@@ -1,0 +1,140 @@
+ 
+html {
+	background-image: url("../images/Wood.jpg");
+	background-repeat: repeat;
+}
+
+ 
+  body {
+	margin: 90px;
+    background-color:darkturquoise;
+	padding: 10px;
+  }
+  
+    #logo {
+      font-family: Batang;
+      font-size: 2em;
+      color: maroon;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color:aquamarine;
+      border-radius: 0 0 10px 10px;
+      padding: 10px;
+  }
+  
+  p {
+    background-color:khaki;
+    color: maroon;
+    font-family: Arial, "Palatino Linotype", Times, serif;
+    font-size: 1em;
+	padding:50px;
+  }
+  
+    pre {
+    background-color:khaki;
+    color: maroon;
+    font-family: Arial, "Palatino Linotype", Times, serif;
+    font-size: 1em;
+	padding:50px;
+  }
+  
+  h1, h2, h3 {
+    background-color: aquamarine;
+    color: maroon;
+    font-family: Batang;
+    border-bottom: 2px solid aquamarine;
+    padding-top: 10px;
+    padding-bottom: 5px;  
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+ 
+  .note {
+    font-family: Batang;
+    color:maroon;
+    border: 2px solid khaki;
+    background-color:lightgreen;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 20px;
+  }
+  
+  .note strong {
+	color: maroon;
+  }
+  
+  article {
+	max-width: 760px;
+	margin: 0 auto;
+  }
+
+  h1+p {
+      background-color:khaki;
+      color: maroon;
+      font-family: Batang;
+      font-size: 1.2em;
+      line-height: 140%;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: saddlebrown;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:khaki;
+    display: khaki;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: saddlebrown;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.sidenav .menu{
+	color: saddlebrown;
+	font-size:30px;cursor:pointer
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 30px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+  footer p {
+    background-color:darkturquoise;
+    color: maroon;
+    font-family: Batang;
+    font-size: 00,5em;
+  }
+  
+  details p {
+    background-color:darkturquoise;
+    color: maroon;
+    font-family: Batang;
+    font-size: 00,5em;
+  }
