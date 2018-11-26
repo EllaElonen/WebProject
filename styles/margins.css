@@ -226,9 +226,51 @@ p.box{
 
 img.clipped {
     position: absolute;
-    clip: rect(0px,60px,200px,0px);
+    clip: rect(100px,200px,200px,100px);
 }
 
+.inline{
+	display: inline;
+	padding: 5px;
+}
+
+.block{
+	display: block;
+	padding: 5px;
+}
+
+.inline-block{
+	display: inline-block;
+	padding: 5px;
+}
+
+div.scroll {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: scroll;
+}
+
+div.hidden {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+}
+
+div.auto {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: auto;
+}
+
+div.visible {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: visible;
+}
   
   
   
