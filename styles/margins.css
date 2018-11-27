@@ -26,7 +26,7 @@ html {
   p {
     background-color:khaki;
     color: maroon;
-    font-family: Arial, "Palatino Linotype", Times, serif;
+    font-family: Times New Roman, Arial;
     font-size: 1em;
 	padding: 20px;
   }
@@ -34,7 +34,7 @@ html {
   h1, h2, h3 {
     background-color: aquamarine;
     color: maroon;
-    font-family: Batang;
+    font-family: Batang, Times New Roman;
     border-bottom: 2px solid aquamarine;
     padding-top: 10px;
     padding-bottom: 10px;  
@@ -46,7 +46,7 @@ html {
   }
  
   .note {
-    font-family: Batang;
+    font-family: Times New Roman, Arial;
     color:maroon;
     border: 2px solid khaki;
     background-color:lightgreen;
@@ -121,14 +121,14 @@ html {
   footer p {
     background-color:darkturquoise;
     color: maroon;
-    font-family: Batang;
+    font-family: Batang, Times New Roman;
     font-size: 00,5em;
   }
   
   details p {
     background-color:darkturquoise;
     color: maroon;
-    font-family: Batang;
+    font-family: Batang, Times New Roman;
     font-size: 00,5em;
   }
   
@@ -265,12 +265,85 @@ div.auto {
     overflow: auto;
 }
 
-div.visible {
+.none {
     background-color: lightblue;
     width: 110px;
     height: 110px;
     overflow: visible;
 }
+
+p.red {background-color:rgba(255,0,0,0.3);}
+p.green {background-color:rgba(0,255,0,0.3);}
+p.blue {background-color:rgba(0,0,255,0.3);}
+p.grey {background-color:rgba(192,192,192,0.3);}
+p.yellow {background-color:rgba(255,255,0,0.3);}
+p.cerise {background-color:rgba(255,0,255,0.3);}
+
+.borderradius{
+    border: 2px solid coral;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.borderradius2 {
+    border: 2px solid coral;
+    padding: 10px;
+    border-radius: 50px 20px;
+}
+
+.shadow1 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+.shadow2 {
+    border: 1px solid;
+    padding: 10px;
+	box-shadow: 5px 10px coral; 
+}
+
+p.gradient1{
+	background-image: linear-gradient(magenta, coral);
+}
+
+p.gradient2{
+	background-image: linear-gradient(to left, aqua, deeppink);
+}
+
+p.gradient3{
+	background-image: linear-gradient(to bottom right, darkgreen, springgreen, lightgreen);
+}
+
+.gradient4{
+	background-image: linear-gradient(red, blue 10%, green 20%);
+}
+
+.gradient5{
+	background-image: repeating-linear-gradient(red, magenta 10%, pink 20%);
+}
+
+.radgrad1{
+	height: 150px;
+    width: 200px;
+    background-image: radial-gradient(red, yellow, green);
+}
+
+.radgrad2{
+	height: 150px;
+    width: 200px;
+	background-image: repeating-radial-gradient(green, yellow 10%, magenta 15%);
+}
+
+.radgrad3{
+	height: 150px;
+    width: 200px;
+	background-image: radial-gradient(farthest-side at 60% 55%, lightblue, skyblue, aqua);
+}
+
+
+
+
   
   
   

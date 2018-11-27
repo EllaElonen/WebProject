@@ -78,6 +78,24 @@
 					border-width-top, and a medium border-width-left and border-width-right.
 				</p> 
 				
+				<p class="borderradius">
+					Border-radius is the radius of the element's corners. This paragraph has a border-radius of 25px in all corners. Border-radius is defined for each corner clock-wise, 
+					starting from top-left. 
+				</p>
+				
+				<p class="borderradius2">
+					This is another example with a border-radius 50px 20px.
+				</p>
+				
+				<p class="shadow1">
+					You can also add shadows around the borders of an element. This is one example of a paragraph with a shadow,
+					specified with the box-shadow property. 
+				</p>				
+				
+				<p class="shadow2">
+					Box-shadow can also have a color.
+				</p>
+				
 			</section>
 		
 			<section>
@@ -145,29 +163,114 @@
 					xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 					xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 				</div>
+				
+				<div>
+					xxxxxxxxxxxxxxxxxxxxxxx<p class="none"> inline-block-displayed paragraph in a div element</p>xxxxxxxxxxxxxxxxxxx
+					xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+					xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				</div>
 			</section>
 			
-			<h1>Handling overflow</h1>
+			<header>
+				<h1>Handling overflow</h1>
+			</header>
 			
-			<p>
+			<section>
+				<p>
 				The following div elements illustrate different options for the overflow element: What happens if the text 
 				does´t fit in the defined space. 
-			</p>
+				</p>
 			
-			<p>overflow: scroll</p>
-			<div class="scroll">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
-			tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+				<p>overflow: scroll</p>
+				<div class="scroll">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
 
-			<p>overflow: hidden:</p>
-			<div class="hidden">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+				<p>overflow: hidden:</p>
+				<div class="hidden">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
 
-			<p>overflow: auto</p>
-			<div class="auto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
-			ut laoreet dolore magna aliquam erat volutpat.</div>
+				<p>overflow: auto (if the text is clipped, there will be a scrollbar)</p>
+				<div class="auto">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
 
-			<p>overflow: visible (default)</p>
-			<div class="visible">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidu
-			ut laoreet dolore magna aliquam erat volutpat.</div>
+				<p>overflow: visible (default)</p>
+				<div class="visible">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+			
+				<p>overflow: none</p>
+				<div class="none">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+			<section>
+			
+			<header>
+				<h2>RGBA and Opacity</h2>
+			</header>
+			
+			<section>
+				<p>
+				The rbga function uses rgb colors and extends them with an alpha channel that specifies the opacity. 
+				Following paragraphs use the rgba funktion, and illustrate how the background color of the body comes through
+				the colors red, green, blue, grey, yellow and cerise (in that order) with different opacity values. 
+				</p>
+			
+				<p class="red">Paragragh</p>
+				<p class="green">Paragraph</p>
+				<p class="blue">Paragraph</p>
+				<p class="grey">Paragraph</p>
+				<p class="yellow">Paragraph</p>
+				<p class="cerise">Paragraph</p>
+			</section>
+			
+			<header>
+				<h2>Gradients</h2>
+			</header>
+			
+			<section>
+				<p class="gradient1">
+					Linear gradient means a color change from one color at the top to another color at the bottom, that happens 
+					in the direction of a straight line, like in this paragraph. In this paragraph, it changes from magenta to coral, 
+					from top to bottom. You could also change the gradient direction, for example: 
+				</p>
+				
+				<p class="gradient2">
+					background-image: linear-gradient(to right, aqua, deeppink)
+					Note: If you want to support some old browsers that don´t support gradient, add background-color before image, 
+					for example the color you want to start from. 
+				</p>
+				
+				<p class="gradient3">
+					You can also add three or more colors:
+					background-image: linear-gradient(to bottom right, darkgreen, lightgreen).
+				</p>
+				
+				<p class="gradient4">
+					This paragraph has the property background-image: linear-gradient(red, blue 10%, green 20%)
+				</p>
+				
+				<p class="gradient5">
+					This paragraph has the property background-image: linear-gradient(to top left, darkgreen, springgreen, lightgreen).
+				</p>
+				
+				<p class="gradient6">
+					This paragraph has the property background-image: repeating-linear-gradient(red, magenta 10%, pink 20%);
+				</p>
+				
+				<p class="radgrad1">
+					Radial gradient has a shape instead of a straight line.
+					For a radius gradient you first need to define a size for the the element.(here: height: 150px; width: 200px;)
+					This paragraph has the property background-image: radial-gradient(circle, red, yellow, green);
+				</p>
+				
+				<p class="radgrad2">
+					This paragraph has the property height: 150px; width: 200px;
+				</p>
+				
+				<p class="radgrad3">
+					This paragraph has the property height: background-image: 
+					radial-gradient(farthest-side at 60% 55%, lightblue, skyblue, aqua); It also defines the size of the gradient (from 
+					the farthest side).
+				</p>									
+			</section>
 		</article>
 		<footer>
 			Posted by: Ella Elonen
