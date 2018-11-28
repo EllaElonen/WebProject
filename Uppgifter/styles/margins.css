@@ -337,8 +337,8 @@ p.gradient3{
 
 .radgrad3{
 	height: 150px;
-	background-image: radial-gradient(farthest-side at 60% 55%, lightblue, skyblue, aqua);
     width: 200px;
+	background-image: radial-gradient(farthest-side at 60% 55%, lightblue, skyblue, aqua);
 }
 
 
