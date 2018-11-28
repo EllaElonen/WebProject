@@ -9,7 +9,7 @@
         <meta name="generator" content="0">
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta http-equiv="refresh" content="3000">
-        <title>Background</title>
+        <title>Background and Pictures</title>
 		<link href="styles/background.css" rel="stylesheet">
 		<script src="scripts/CSS.js"></script>
 	</head>       
@@ -24,7 +24,7 @@
 			</div>  
 		<article>
 			<header>
-				<h1>Background</h1>
+				<h1>Background and pictures</h1>
 			</header>
 				
 				<p>
@@ -37,10 +37,11 @@
 				</header>
 				
 				<p class="color">
-					Usually, pictures are added in HTML, but when it comes to styling elements that don´t affect the 
-					placement of contents on the page, it can be done with CSS. That is the case with background pictures. 
-					Many times, the picture is added to the document body, but can also be added to the HTML element, in which 
-					case it is easy to add another background to the body that will surround the paragraphs.
+					Background is a CSS style property that is not directly a part of the contents of the page, and does not need 
+					to take place from other elements, but has them placed on top of it. 
+					Background pictures and colors can be added to many elements; body, paragraphs, div elements etc., 
+					and sometimes HTML, in which case you can add a background to the body, and make the picture show up as a 
+					frame behind the color. 
 				</p>
 										
 			</section>
@@ -120,7 +121,7 @@
 			
 			<section>
 				<header>
-					<h3>How to style an image element</h3>
+					<h2>How to style an image element</h2>
 				</header>
 				
 				<p>
@@ -137,29 +138,43 @@
 					This is the default way of handling the problem.
 				</p>				
 				<p class="img">
-					This is another way of handling it. <img src ="images/Leaf.jpg" alt ="Sunset" style="width:400px;height:200px;"><br>
+					This is another way of handling it. <img src ="images/Leaf.jpg" alt ="Leaf" style="width:400px;height:200px;"><br>
 					It is achieved by setting the display to block, he left and right margin to auto, and the size to 50%. 
 				</p>			
 				
 				<p>
 					The next image is a polaroid/card presentation in a div container.
 				</p>
-				<div class="polaroid">
+				
+				<figure class="polaroid">
 					<img src="images/Leaf.jpg" alt="5 Leaf">
 					<div class="container">
 						Floating Leaf
 					</div>
-				</div class="img">		
-					<img src ="images/Leaf.jpg" alt ="Leaf" style="width:400px;height:200px;">
-					
-					<p>The picture above is simply wrapped in a div element.</p>
+				</figure>	
+				
+				<figure>
+					<img src="images/Leaf.jpg" alt="Leaf">
 					<p>
+						This picture has opacity 50 %, which is why it is half transparent. It is div in a figure 
+						element with the text around it.
+					</p>
+					<p>This is also some text. This is also some text. This is also some text. This is also some text.
+					This is also some text. This is also some text.
+					</p>
+					<p class="clear">
+						This is some text. This is some text. This is some text. This is some text. This is some text. 
+						This is some text.
+					</p>				
+				</figure>
+				
+				<p>
 					There are many ways of styling pictures, and you can add more effects with box-shadow, for example.
 					These pictures are just a fex examples of how you can use CSS to style your picture.
 					There are many ways of styling pictures, and you can add more effects with box-shadow, for example.
-					Google is your friend, and <a href="https://www.w3schools.com/css/css3_images.asp">W3Schools</a>
+					There are lots of good resources online, and <a href="https://www.w3schools.com/css/css3_images.asp">W3Schools</a>
 					can be a good place to start. 
-				</p>				
+				</p>
 			</section>
 		</article>
 		<footer>

@@ -115,6 +115,7 @@
   }
   
   ul{
+	  font-style: Times New Roman, Arial;
 	  padding: 20px;
 	  color:wheat;
 	  background-image: url("../images/GreenLeaves.jpg");
@@ -143,34 +144,42 @@
 	height:100%;
 	width:100%;
 	padding-right:0px;
- }
+ }*/
  
  div.polaroid {
-	 color: brown;
 	 font-size:2em;
 	width: 80%;
 	background-color: wheat;
-	font-size: 1.5em;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-bottom: 25px;
 }
 
 div.container {
-  text-align: center;
-		padding: 10px 20px;
+	font-size:2.5em;
+	text-align: center;
+	padding: 10px 20px;
 	height:80px;
 	width:400px;
 }
 
-div.polaroid {
+figure.polaroid {
     width: 80%;
+	color:brown;
     background-color: white;
-    
 }
 
-div.img{
-	color:wheat;
-	font-size: 1.5em;
+.clear img{
+	width:300px;
+	height:200px;
+	float:left;
+	opacity:0.5;
+}
+
+p.clear {
+	font-size:2em;
+	color: wheat;
+	font-color:brown;
+    clear: both;
 }
 
 
