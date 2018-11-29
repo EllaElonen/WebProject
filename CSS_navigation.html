@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+
+ <html>
+
+    <head>
+        <meta charset =" utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta http-equiv="refresh" content="30">
+		
+        <title>CSS Navigation</title> 
+		<script src="scripts/CSS.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/CSS_navigation.css">
+    </head>
+
+    <body>
+	<div class="content">
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+	
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<a href="CSS">CSS Basics</a><br />
+			<a href="CSS_margin.html">Box Model</a><br />
+			<a href="CSS_measure.html">Measure</a><br />
+			<a href="CSS_text_lists.html">Text</a>
+			<a href="CSS_background.html">Background</a>
+			<a href="CSS_navigation.htm">Navigation</a>
+		</div>  
+	
+        <article>	
+			<div id="logo"> Web development for beginners</div>
+			
+			<section>
+				<header>
+					<h1>Navigation links and how to style them with CSS</h1>
+				</header> 
+				
+				<p>
+					Links to other HTML ages are called hyperlinks. They are surrounded by the anchor tag, &lt;a&gt;.
+					They can be placed into text in regular paragraphs, like this: <a href="CSS.html" class="lime">CSS Basics</a> or added to 
+					more complex elements like meny bars, like the menu you can open from the top left corner of this page.
+				</p>
+				
+				<p>
+					The :active selector styles links that have been made active by clicking. A:hover styles links that 
+					the mouse pointers hovers over. See what happens with this link when you hover over it, 
+					and when you click on it, before the link page is opened. After yuou have visited the link, it 
+					changes color to purple. That is done with the a:visited selector. 
+					<a class="lime" href="CSS.html">CSS Basics</a>
+				</p>
+				
+				<p>
+					You can also put <a> links into list items, like this:
+				</p>
+				
+				<ul>
+					<li><a href="CSS.html">CSS Basics<a/></li>
+					<li><a href="CSS.html">CSS Basics<a/></li>
+					<li><a href="CSS.html">CSS Basics<a/></li>
+				</ul>
+				</section>
+			<section>
+				<header>
+					<h1>How to style buttons</h1>
+				</header> 	
+				<p>
+					Buttons are styled like any other elements. You use a selector to select the button element, and give it 
+					properties like background-color, font-size, text-align (normally center), border and border-radius 
+					(to make the edges rounded). You can change their width, height, padding and margin. Here are some examples:
+				</P>
+				
+				<button class="greenrouunded">Button</button>
+				
+				<button class="redoval">Button</button>
+				
+				<button class="yellow">Button</button>
+				
+				<button class="blue">Button</button>
+			
+			</section>
+			
+			<section>
+				<header>
+					<h2>Button links</h2>
+				</header>
+				
+				<p>
+					Below you see an example of a link button an example of a link button. It concists of an &lt;anchor&gt; tag 
+					with a &lt;button&gt; element inside it.
+				</p>
+				
+				<button class="linkButton">
+					<a href="about.html" class="button">Button</a>
+				</button>
+				
+				<header>
+					<h2>Image Links</h2>
+				</header>
+				
+				<p>Besides plain text and buttons, an anchor tag can also contain an image element. The
+					element is styled like any other image element.
+				</p>
+					
+				<p class="note"><strong>Example:</strong>The image below is an example of an image link. If you click it, a page 
+					about CSS basics will open. As described above, the link consists of an &lt;a&gt; tag with an &lt;img&gt; tag 
+					inside it.
+				</p>
+	
+				<figure>				
+					<a href="CSS.html" target="_blank">
+						<img class="imglink" src="images/Dreaming.jpg" border="0"/>
+					</a> 
+				</figure>
+        </section>
+    </article>
+	
+	<footer>
+		Posted by: Ella Elonen
+		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	</footer>
+
+	<details>
+		<summary> Copyright 2018-2021.</summary>
+		<p> by Ella Elonen.</p>
+		<p>All content on this site can be shared according to the GNU General Public license</p>
+	</details>
+	</div>
+	</body>
+ </html>
+
+

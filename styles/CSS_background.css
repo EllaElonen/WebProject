@@ -168,14 +168,14 @@ figure.polaroid {
     background-color: white;
 }
 
-.clear img{
+figure .clear{
 	width:300px;
 	height:200px;
 	float:left;
 	opacity:0.5;
 }
 
-p.clear {
+h3.clear {
 	font-size:2em;
 	color: wheat;
 	font-color:brown;
