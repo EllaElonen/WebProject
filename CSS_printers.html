@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+
+    <head>
+        <meta charset =" utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta http-equiv="refresh" content="30">
+		
+        <title>Page Layout</title> 
+		<script src="scripts/CSS.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/CSS_printers.css">
+	</head>
+	<body>
+
+		<h1>COOL CSS DESIGN</h1>
+		
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<ul>
+				<a href="CSS">CSS Basics</a><br />
+			<a href="CSS_margin.html">Box Model</a><br />
+			<a href="CSS_measure.html">Measure</a><br />
+			<a href="CSS_text_lists.html">Text</a>
+			<a href="CSS_background.html">Background</a>
+			<a href="CSS_navigation.html">Navigation</a>
+			</ul>
+		</nav>
+		
+		</article>
+			<section>
+			<header>
+				<h2>CSS Layouts: How to make your document suitable for printing</h2>
+			</header>		
+  
+			</section>
+			<header>
+				<h3>@page and margin @ rules</h3>
+			</header>
+			
+				<p>
+					This page is an example of a printable layout. In order to make that, an important concept is @page rule.
+					It lets you control the size and orientation of the page, margins, borders and padding, headers and footers, 
+					page counters and inheritance issues. For example, this page sets the margin for all pages like this:
+				</p>
+					<pre>
+					@page {
+						margin: 10cm;
+					}
+					</pre>
+				
+				<p>				
+					You can also define how to crop the pages, and the bleed area - the area outside the page box. All of this 
+					will be applied to all pages. You can also define some pages as horizontal and some as vertical, and 
+					then apply orientation or formatting just to the vertical ones, for example. 
+				</p>	
+				
+				<pre>
+					section{
+						page vertical;
+						}
+				</pre>
+					
+				<pre>
+				<br>
+					@page vertical{<br>
+						size: A4 portrait;
+					}
+				</pre>
+					
+				<p>
+					You could also use a pseudo class, for example: @page :blank to choose all the blank pages.
+				</p>
+		
+				<p>
+					Margin @ rules identify one or many corners of a document, for example: @top-left-corner could be given a 
+					certain margin.
+				</p>
+				
+				<p>
+					Page-breaks can be defined in different ways, but it is essential that the document know about where to 
+					insert a page-break. One example, used on this page:
+				</p>
+				
+				<header>
+					<h3>Page breaks</h3>
+				</header>
+				
+				<pre>
+				 @media print {
+					footer {
+						page-break-after: always;
+					}
+				}
+				</pre>
+				
+				<p>
+					You can also use page-break-before, for example to break the page before H1. Page breaks can also be prevented
+					pre elements won´t be split. 
+					where needed, for example this page applies the rule: page-break-inside: avoid, s the CSS code in the 
+}
+				</p>
+				
+				<header>
+					<h3>Page size</h3>
+				</header>
+				
+				<p>
+					This page defines the size of the document body page to A4 portrait. If it included tables or pictures 
+					that would need to be printed horizontally, those pages would be given the value landscape. The size can also
+					be set in pixels or inches, or as auto.
+				</p>
+				
+				<header>
+					<h3>Orphans</h3>
+				</header>
+				
+				<p>
+					You can also define orphans for your pages: The amount of minimum lines for an element that should be visible at the 
+					bottom of a page. For this document, it is set to two. The same goes for widows, only it refers to the top 
+					of a page.
+				</p>
+
+			</section>
+		</article>
+		
+		<footer>
+			Posted by: Ella Elonen
+			<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+		</footer>
+
+		<details>
+			<summary> Copyright 2018-2021.</summary>
+			<p> By Ella Elonen</p>
+			<p>All content on this site can be shared according to the GNU General Public license</p>
+		</details>
+	</body>
+</html>
