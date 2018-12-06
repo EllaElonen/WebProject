@@ -42,3 +42,8 @@ function print_2D_array(){
  function print_message(){
      var message = "Array contains" + input;
     }
+	
+function print_date(){
+	var d = new Date();
+	document.getElementById("demo").innerHTML = d;
+}

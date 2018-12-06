@@ -28,6 +28,7 @@ h1 {
     text-align: left;
     font-size: 3em;
     color: white;
+	margin-top: 0px;
 }
 
 h2{
@@ -53,7 +54,7 @@ h3{
     position: fixed;
     width: 0;
     height: 30em; 
-    background: fuchsia;
+    background-color: fuchsia;
 	z-index: 1;
     top: 0;
     left: 0;
@@ -61,12 +62,20 @@ h3{
     transition: 0.5s;
 }
 
+.sidenav ul {
+	margin-left: 0;
+    padding: 0;
+    background-color: fuchsia;
+    text-align: left;
+	/*width: 200px;*/
+}
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color:white;
-    display: white;
+    /* display: white; */
     transition: 0.3s;
 }
 
@@ -75,12 +84,10 @@ h3{
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
-	padding-left: 60px;
-	padding-right: 60px;
 }
 
 .sidenav .menu{
+	color: saddlebrown;
 	font-size:30px;cursor:pointer
 }
 
@@ -108,7 +115,6 @@ article:after {
 }
 
 footer {
-    background-color: #777;
     padding: 10px;
     text-align: center;
     color: white;
@@ -148,8 +154,9 @@ footer {
 	position: absolute;
 	right: 0;
 	top: 0;
-	padding-right:10px;
-	padding-top: 10px;
+	padding-right:0px;
+	padding-top: 170px;
+	margin-right: 0px;
 }
 
 ul{
