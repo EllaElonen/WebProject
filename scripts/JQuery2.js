@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$('.corner-image').hide().slideDown(3000);
 });
 
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {

@@ -40,46 +40,37 @@
 			<img src="images/Magnolia.png">
 		</figure>
 		
-		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
-		<nav id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br/>
-			<ul>
-				<a href="CSS">CSS Basics</a><br />
-				<a href="CSS_margin.html">Box Model</a><br />
-				<a href="CSS_measure.html">Measure</a><br />
-				<a href="CSS_text_lists.html">Text</a>
-				<a href="CSS_background.html">Background</a>
-				<a href="CSS_navigation.html">Navigation</a>
-			</ul>
-		</nav>
-		
-		<figure class="corner-image">
-			<img src="images/Magnolia.png">
-		</figure>
-		
 	   <h2>Tabs</h2>
     
         <p>Click on the buttons inside the tabbed menu:</p>
 
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="openTab(event, 'HTML')">HTML</button>
+            <button class="tablinks" onclick="openTab(event, 'CSS')">CSS</button>
+            <button class="tablinks" onclick="openTab(event, 'JavaScript')">JavaScript</button>
         </div>
 
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+        <div id="HTML" class="tabcontent">
+            <h3>HTML</h3>
+            <p>HTML builds the basic structure of your web page. To browse the HTML resources, Start your navigation here. 
+            <a href="structure.html">Structure of HTML></a>
+            </p>
         </div>
 
-        <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p> 
-        </div>
+        <div id="CSS" class="tabcontent">
+            <h3>CSS</h3>
+            <p>
+                CSS is used for adding style to your web page. To browse the CSS resources, Start your navigation here. 
+                <a href="CSS.html">CSS Basics</a>
+            </p>
+        </div>div>
 
-        <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+        <div id="JavaScript" class="tabcontent">
+            <h3>JavaScript</h3>
+            <p>
+                JavaScrip helps you make your pages respond to events dynamically. To browse the JavaScript resources, Start your navigation here. 
+                <a href="javascript.html">JavaScript</a>
+            </p>
         </div>
       
         <button onclick="lavenderblush()">Change background color to lavenderblush</button>

@@ -13,6 +13,8 @@ body {
 
 p{
 	padding-left: 20em;
+    font-size:1em;
+    color: mediumvioletred;
 }
 
 
@@ -115,11 +117,15 @@ article:after {
 }
 
 footer {
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     color: white;
 	background-color: mediumorchid;
 	clear: both;
+}
+
+details{
+background-color: mediumorchid;
 }
 
 
@@ -167,6 +173,8 @@ ul{
     color: mediumorchid;
 	width: 30em;
 	margin-left: 10em;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -177,12 +185,6 @@ body {
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
-}
-
-/* Remove margins and padding from the list */
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 /* Style the list items */
@@ -279,7 +281,7 @@ input {
 }
 
 .addBtn:hover {
-  background-color: #bbb;
+  background-color: snow;
 }
 
 div{
@@ -324,18 +326,23 @@ body {font-family: Arial;}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: snow;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: snow;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid snow;
     border-top: none;
+    color: darkorchid;
+}
+
+button{
+    margin: 40px;
 }
