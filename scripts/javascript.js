@@ -27,18 +27,6 @@ function print_array(){
     document.getElementById("arr").innerHTML = items;
 }
 
-//not used
-function print_2D_array(){
-    var ar = [[3, 2, 1], [5, 1, 6], [1, 6, 0], [4, 7, 8], [4, 15, 2]];
- 
-    for (var i in ar) {
-       document.write("row " + i); 
-       for (var j in ar[i]){
-          document.write(" " + ar[i][j] + " ");
-         }
-    }
-} 
-
  function print_message(){
      var mess = "Hello, this is a String.";
      document.getElementById("message").innerHTML = mess;
@@ -69,8 +57,8 @@ function print_math(){
 function print_reg(){
     var str = "This is my Webproject!!!";
     var RegEx = /WebProject/i;
-    var sub = RegEx.exec(str);
-    document.getElementById("reg").innerHTML = "RegExp: " + RegEx.toString() + " " + "Search result found in the text 'This is my Webproject!!!': "  + sub;
+    var searchresult = RegEx.exec(str);
+    document.getElementById("reg").innerHTML = "RegExp: " + RegEx.toString() + "<br>" + "Search result found in the text 'This is my Webproject!!!': "  + searchresult;
 }
 
 
@@ -79,5 +67,6 @@ function print_global(){
     var n = "string";
     document.getElementById("glob").innerHTML = "Result of calculation: " + inf + "<br>" + "Type of variable: " + typeof(nan) + "<br>" +
     "Is variable NaN?: " + isNaN(inf) + "<br>" + "Is the string 'string' a NaN?: " + isNaN(n);
+    window.alert("This window was created by calling the global object window.")
 }
 

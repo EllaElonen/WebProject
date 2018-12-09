@@ -7,13 +7,22 @@ html{
 }
 
 body {
-    font-family: Courier New, Helvetica, sans-serif;
+    color:balck;
+    font-family: Times, Helvetica, sans-serif;
 	size: A4 portrait;
 }
 
 p{
+    font-family: Times, Helvetica, sans-serif;
+    margin: 2em;
+    padding: 5em:
 	padding-left: 20em;
-    font-size:1em;
+    font-size:1.2em;
+    color: black;
+}
+
+span{
+    font-family: Courier New, Helvetica, sans-serif;
     color: mediumvioletred;
 }
 
@@ -25,6 +34,7 @@ pre{
 }
 
 h1 {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: mediumorchid;
     padding: 1.5em;
     text-align: left;
@@ -34,6 +44,7 @@ h1 {
 }
 
 h2{
+    font-family: Arial, Helvetica, sans-serif;
 	background-color: white;
     padding: 0em;
     text-align: center;
@@ -48,6 +59,7 @@ h2{
 }
 
 h3{
+    font-family: Arial, Helvetica, sans-serif;
 	color: medium-orchid;
 	padding-left: 20em;
 }
@@ -161,7 +173,7 @@ background-color: mediumorchid;
 	right: 0;
 	top: 0;
 	padding-right:0px;
-	padding-top: 170px;
+	/*padding-top: 170px;*/
 	margin-right: 0px;
 }
 
@@ -244,7 +256,7 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #f44336;
+  background-color: mediumvioletred;
   color: white;
 }
 
@@ -271,7 +283,7 @@ input {
   padding: 10px;
   width: 25%;
   background: #d9d9d9;
-  color: #555;
+  color: snow;
   float: left;
   text-align: center;
   font-size: 16px;
@@ -281,7 +293,7 @@ input {
 }
 
 .addBtn:hover {
-  background-color: snow;
+  background-color: mediumvioletred;
 }
 
 div{
@@ -289,7 +301,7 @@ div{
     padding: 1em;
     text-align: center;
     font-size: 2em;
-    color: white;
+    color: black;
 }
 
 .addBtn{
@@ -303,13 +315,15 @@ div{
 	width: 20 px;
 }
 
-body {font-family: Arial;}
+body {
+    font-family: Arial;
+}
 
 /* Style the tab */
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: thistle;
 }
 
 /* Style the buttons inside the tab */
@@ -345,4 +359,31 @@ body {font-family: Arial;}
 
 button{
     margin: 40px;
+    background-color: lightgrey;
 }
+
+div{
+    color:black;
+    font-size: 1.2em;
+}
+
+/* add form styles */
+form {
+    color: black;
+    font-size: 1em;
+    font-family:Tahoma, Geneva, sans-serif;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    text-align: right;
+    padding: 10px 25px;
+}
+
+input {
+  width: 100%;
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+

@@ -11,7 +11,7 @@
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <!--<meta http-equiv="refresh" content="30">-->
 		
-        <title>Page Layout</title> 
+        <title>JQuery</title> 
 		<script src="scripts/CSS.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles/JQuery2.css">
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -39,26 +39,28 @@
 		<figure class="corner-image">
 			<img src="images/Magnolia.png">
 		</figure>
-		
-	   <h2>Tabs</h2>
+        
+        <p class="clear"> This page illustrates some of the things you can do with JavaScript and JQuery - a huge library of useful Javascript shortcuts. For example, JQuery has many ways of making a page react to mouse events, changing input and a lot more. </p>
+        
+	   <h2>Example of handling mouse events: Tabs</h2>
+        
+         <p>See what happens when you hover over the three tabs below       , or click on them.</p>
     
-        <p>Click on the buttons inside the tabbed menu:</p>
-
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'HTML')">HTML</button>
-            <button class="tablinks" onclick="openTab(event, 'CSS')">CSS</button>
-            <button class="tablinks" onclick="openTab(event, 'JavaScript')">JavaScript</button>
+            <button id="HTMLButton"class="tablinks">HTML</button>
+            <button id="CSSButton" class="tablinks">CSS</button>
+            <button id="JavaScriptButton" class="tablinks">JavaScript</button>
         </div>
 
         <div id="HTML" class="tabcontent">
-            <h3>HTML</h3>
+            <h3 class="HTML">HTML</h3>
             <p>HTML builds the basic structure of your web page. To browse the HTML resources, Start your navigation here. 
             <a href="structure.html">Structure of HTML></a>
             </p>
         </div>
 
         <div id="CSS" class="tabcontent">
-            <h3>CSS</h3>
+            <h3 class="CSS">CSS</h3>
             <p>
                 CSS is used for adding style to your web page. To browse the CSS resources, Start your navigation here. 
                 <a href="CSS.html">CSS Basics</a>
@@ -66,15 +68,68 @@
         </div>
 
         <div id="JavaScript" class="tabcontent">
-            <h3>JavaScript</h3>
+            <h3 class="JavaScript">JavaScript</h3>
             <p>
                 JavaScrip helps you make your pages respond to events dynamically. To browse the JavaScript resources, Start your navigation here. 
                 <a href="javascript.html">JavaScript</a>
             </p>
         </div>
-      
-        <button onclick="lavenderblush()">Change background color to lavenderblush</button>
-        <button onclick="lavender()">Change background color to lavender</button>
+        
+        <h2>Mouse Events</h2>
+        
+        <p>
+            Here you see some examples of JQuery functions. Try clicking on these buttons to trigger a JQuery function connected to it. With JQuery selectors, which work pretty much like CSS selectors. You can easily choose an HTML element (by type of tag, class or id) and tell it to change, appear or disappear, or change its CSS properties. 
+        </p>  
+        
+        <button id="lavenderblush" onclick="lavenderblush()">Change background color to lavenderblush</button>
+        <button id="lavender" onclick="lavender()">Change background color to lavender</button>
+        <button class="hideButton">Hide tabs</button>      
+        <button class="showButton">Show tabs</button>   
+        
+        <h2>Window Events</h2>
+        
+        <p>
+            JQuery can easily make your HTML elements respond to Window events. One example of a very useful function is resize. See what happens to the text in these paragraphs when you rized the window back and forth, to see the effect.
+        </p>
+    
+        <h2>Example of handling input</h2>
+        
+        <p>
+            Enter some text in the input box below, then see what happens with the taxt when you click somewhere on the window outside the input box: 
+        </p>
+
+        <form class="subform" action="">
+            First name: <input type="text" name="FirstName"><br>
+            Last name: <input type="text" name="LastName"><br>
+            <input type="submit" value="Submit">
+            <p>Keypresses: <span>0</span></p>
+        </form> 
+        
+        <p>
+            The JQuery keypress function has been used to measure your key presses while typing input in the boxes. 
+        </p>
+        
+        <h2>Find Out More about JQuery</h2>
+        
+         <p>
+            If you´re curious to know more about how JQuery code looks, right-click on the element in your browser, and choose "inspect element". W3School has great resources for learning JQuery, and you can easily find them by googling the property you´re curious about, and choosing the W3School result. This page is only meant to be a quick introduction to 
+            some basic examples. 
+        </p>
+        
+        <h2>JQuery event.target property</h2>
+        
+        <p>
+            The event object has some useful methods, an example of which is target. It helps you figure out which element triggered an event. 
+            Click on either the button below, the closest heading above, or a paragraph, to see it in action.
+        </p>
+        
+        <button>This is a button</button>
+        
+        <div></div>
+        
+        <p>
+            The heading, paragraph and button element have a click event defined. Click on each element to display which element triggered the event.
+        </p>
         
 		<footer>
 			Posted by: Ella Elonen
@@ -85,7 +140,9 @@
 			<summary> Copyright 2018-2021.</summary>
 			<p> By Ella Elonen</p>
 			<p>All content on this site can be shared according to the GNU General Public license</p>
+            
 		</details>
+        
 		<script src="scripts/JQuery2.js"></script>
 	</body>
 </html>

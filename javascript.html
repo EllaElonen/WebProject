@@ -93,10 +93,12 @@
         <button onclick="print_math()">Print math result</button>
         
         <header>
-			<h2>Global objects</h2>
+			<h2>The Global Object, global properties and fucctions</h2>
 		</header>
+        
+        <p>The Global Object was created in order to create a collection of global properties and functions. The name of the object varies in different development environments, but in a browser environment it is called window.</p>
                 
-        <p>JavaScript has three global properties: Infinity, NaN (not a number), and undefined. In this example, we print the result of a calculation that results in infinity (a number divided by zero), find out the type of the result, and if it is a NaN. For comparison, we find out if the text 'string' is a NaN. </p>
+        <p>The global properties and functions in JavaScript can be used with all built-in objects. JavaScript has three global properties: Infinity, NaN (not a number), and undefined. In this example, we print the result of a calculation that results in infinity (a number divided by zero), find out the type of the result, and if it is a NaN. For comparison, we find out if the text 'string' is a NaN. Also, the funktion isNaN was used here, to check if an object is NaN or not. That is only one example of the many global functions of JavaScript.</p>
         
         <p id="glob"></p>
         
@@ -108,7 +110,7 @@
                 
         <p>
             This example prints a RegEx variable. RegEx stands for a regular expression, and is a sequence of characters used as a search pattern.
-            
+            The i at the end means that capitals are ignored in the search.
         </p>
         
         <button onclick="print_reg()">Print RegExp</button>
