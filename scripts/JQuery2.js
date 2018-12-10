@@ -113,5 +113,14 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("p").on("click", function(){
+        $(this).css("background-color", "pink");
+    });
+    $("button").click(function(){
+        $("p").off("click");
+    });
+});
+
 
 

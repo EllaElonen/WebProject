@@ -389,7 +389,8 @@ input {
 }
 
 a {
-    margin: 2em;
-    float: left;
+    margin: 2em;;
+    clear: both;
+    
 }
 
