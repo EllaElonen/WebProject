@@ -1,0 +1,144 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+
+    <head>
+        <meta charset =" utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <!--<meta http-equiv="refresh" content="30">-->
+		
+        <title>JQuery</title> 
+		
+		<link rel="stylesheet" type="text/css" href="styles/navigator.css">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		
+	</head>
+	<body>
+
+		<header>
+			<h1>COOL JAVASCRIPT & JQUERY</h1>
+		</header>
+		
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br/>
+			<ul>
+				<a href="CSS">CSS Basics</a><br />
+				<a href="CSS_margin.html">Box Model</a><br />
+				<a href="CSS_measure.html">Measure</a><br />
+				<a href="CSS_text_lists.html">Text</a>
+				<a href="CSS_background.html">Background</a>
+				<a href="CSS_navigation.html">Navigation</a>
+			</ul>
+		</nav>
+		
+		<figure class="corner-image">
+			<img src="images/Magnolia.png">
+		</figure>
+        
+        <h2>Window navigator</h2>
+        
+        <p>Window navigator (can be written just navigator) is an object with properties for retrieving platform and browser information. Click the button to see your browser version.</p>
+
+            <button onclick="getBrowserVersion()">Try it</button>
+
+            <p id="browser"></p>
+        
+        <h2>Window screen</h2>
+        
+       <p>The screen object has properties that can be used to retrieve information about screen and color qualities. Click the button to see the total height of your screen (shown in pixels).</p>
+
+        <button onclick="getScreenHeight()">Try it</button>
+
+        <p id="screen"></p>
+        
+        <h2>Window location</h2>
+        
+         <p>The location object has properties that can be used to retrieve information about URL, path, host, protocol etc. Click the button to see the full url of this page.</p>
+        
+        <button onclick="getLocation()">Try it</button>
+        
+        <p id="location"></p>
+        
+        <h2>Window screenLeft</h2>
+        
+        <p>The properties screenLeft and screenTop returns the x (horizontal) and y (vertical) coordinates of the window relative to the screen.</p>
+        
+        <button onclick="getScreenLeft()">Open "myWindow"</button>
+        
+        <h2>Window screenX and screenY</h2>
+        
+        <p>This property returns the coordinates of a window, in relation to the screen. Click the button to see an example.</p>
+        
+        <button onclick="getWindowXY()">Open "myWindow"</button>
+        
+        <h2>Alert, prompt and confirm</h2>
+        
+        <p>
+            The window object also has methods for creating small alert, prompt and confirmation windows. To see examples, click the buttons.
+        </p>
+        
+        <button onclick="createAlert()">Alert</button>
+        <button onclick="createPrompt()">Prompt</button>
+        <button onclick="createConfirmation()">Confirm</button>
+        
+        <h2>Open and close</h2>
+        
+        <p>Click the button to open and close.</p>
+        
+        <button onclick="openWindow()">Open a window</button>
+        <button onclick="closeWindow()">Close the window</button>
+        
+        <h2>Setting intervals</h2>
+        
+        <p>Click the button to see an example of alert interval.</p>
+        
+         <button onclick="setInterval()">Alerts at interval</button>
+        
+        <p>Javascript starts this clock:</p>
+
+        <p id="timer"></p>
+
+        <button onclick="myStopFunction()">Stop time</button>
+        
+        <h2>Clear timer</h2>
+        
+        <p>Click the first button to alert "Hello" every 6 seconds.</p>
+        <p>Click the second button to clear the timer. (You must click it before the 3 seconds are up.)</p>
+
+        <button onclick="setTime()">Alert</button>
+        <button onclick="stopTime()">Stop the alert</button>
+        
+        <h2>Hostname</h2>
+        
+        <p>Click the button to show the hostname of this URL.</p>
+
+        <button onclick="getHostname()">Show hostname</button>
+
+        <p id="host"></p>
+        
+        <h2>cookieEnabled</h2>
+        
+        <p id=cookie></p>
+        
+        <button onclick="getCookies">See if you allow cookies?</button>
+        
+		<footer>
+			Posted by: Ella Elonen
+			<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+		</footer>
+
+		<details>
+			<summary> Copyright 2018-2021.</summary>
+			<p> By Ella Elonen</p>
+			<p>All content on this site can be shared according to the GNU General Public license</p>
+            
+		</details>
+        
+		<script src="scripts/navigator.js"></script>
+	</body>
+</html>
