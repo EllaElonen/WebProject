@@ -394,3 +394,7 @@ a {
     
 }
 
+function getProtocol() {
+    var x = location.protocol;
+    document.getElementById("proto").innerHTML = x;
+}

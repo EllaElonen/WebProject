@@ -11,7 +11,7 @@
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <!--<meta http-equiv="refresh" content="30">-->
 		
-        <title>JQuery</title> 
+        <title>Browser Objects</title> 
 		
 		<link rel="stylesheet" type="text/css" href="styles/navigator.css">
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -64,7 +64,7 @@
         
         <p id="location"></p>
         
-        <h2>Window screenLeft</h2>
+        <h2>Window screenLeft, screenTop</h2>
         
         <p>The properties screenLeft and screenTop returns the x (horizontal) and y (vertical) coordinates of the window relative to the screen.</p>
         
@@ -79,7 +79,7 @@
         <h2>Alert, prompt and confirm</h2>
         
         <p>
-            The window object also has methods for creating small alert, prompt and confirmation windows. To see examples, click the buttons.
+            The window object has methods for creating small alert, prompt and confirmation windows. To see examples, click the buttons.
         </p>
         
         <button onclick="createAlert()">Alert</button>
@@ -88,6 +88,8 @@
         
         <h2>Open and close</h2>
         
+        <p>Window has methods open and close, that can be used, as the name says, for opening and closing a window.</p>
+        
         <p>Click the button to open and close.</p>
         
         <button onclick="openWindow()">Open a window</button>
@@ -95,7 +97,7 @@
         
         <h2>Setting intervals</h2>
         
-        <p>Click the button to see an example of alert interval.</p>
+        <p>Click the button to see an example of alert interval - a useful method in the window object.</p>
         
          <button onclick="setInterval()">Alerts at interval</button>
         
@@ -107,13 +109,12 @@
         
         <h2>Clear timer</h2>
         
-        <p>Click the first button to alert "Hello" every 6 seconds.</p>
-        <p>Click the second button to clear the timer. (You must click it before the 3 seconds are up.)</p>
+        <p>Click the first button to alert "Hello" every 6 seconds.Click the second button to clear the timer. (You must click it before the 3 seconds are up.) This is another window method.</p>
 
         <button onclick="setTime()">Alert</button>
         <button onclick="stopTime()">Stop the alert</button>
         
-        <h2>Hostname</h2>
+        <h2>Location hostname</h2>
         
         <p>Click the button to show the hostname of this URL.</p>
 
@@ -121,11 +122,55 @@
 
         <p id="host"></p>
         
-        <h2>cookieEnabled</h2>
+        <h2>Navigator cookieEnabled</h2>
+        
+        <p>This is a property in the navigator object, that shows your cookie settings. Click the button to see an example.</p>
         
         <p id=cookie></p>
         
-        <button onclick="getCookies">See if you allow cookies?</button>
+        <button onclick="getCookies()">See if you allow cookies</button>
+        
+        <h2>Navigator geolocation</h2>
+        
+        <p>This is a property in the location object, that shows which protocol the program is using. Click the button to see an example.</p>
+        
+        <p id=geo></p>
+        
+        <button onclick="getLocation()">See your location</button>
+        
+        <h2>Navigator platform</h2>
+        
+        <p>Click the button to show the platform of the browser.That is done by using the navigator.platform property.</p>
+
+        <button onclick="getPlatform()">Try it</button>
+
+        <p id="plat"></p>
+        
+         <h2>Location port</h2>
+        
+        <p>This is a property in the location object, that shows the port used by the program. Click the button to see an example.</p>
+        
+        <p id=port></p>
+        
+        <button onclick="findPort()">See the port being used</button>
+        
+        <h2>Location protocol</h2>
+        
+        <p>This is a property in the location object, that shows which protocol the program is using. Click the button to see an example.</p>
+        
+        <p id=proto></p>
+        
+        <button onclick="getProtocol()">See the protocol used</button>
+        
+        <h2>Location search</h2>
+        
+        <p>This is a property in the location object, that returns the query part of the URL. Click the button to see an example.</p>
+        
+        <h2>Location search</h2>
+        
+        <p id=search></p>
+        
+        <button onclick="getQuery()">See the query</button>
         
 		<footer>
 			Posted by: Ella Elonen

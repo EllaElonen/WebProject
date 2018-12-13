@@ -101,3 +101,55 @@ function getCookies() {
             document.getElementById("cookie").innerHTML = "Cookies enabled: undefined";
         }
     }
+
+ function findPort() {
+     if (port != null){
+     var port = "Port: " + location.port; 
+     document.getElementById("port").innerHTML = port;
+     }
+         else{
+               document.getElementById("port").innerHTML = "Port: undefined";
+         }
+ }
+
+var x = document.getElementById("geo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+function getProtocol() {
+    if (protocol != null){
+    var protocol = location.protocol;
+    document.getElementById("proto").innerHTML = protocol;
+    }
+    else{
+        document.getElementById("proto").innerHTML = "Protocol: undefined";
+    }
+}
+
+function getPlatform() {
+    var x = "Platform: " + navigator.platform;
+    document.getElementById("plat").innerHTML = x;
+}
+
+//find search string in URL
+function getQuery(){
+    searchString = "?navigator";
+     if (x != null){
+    var x = "URL query: " + navigator.search.searchString(1);
+    document.getElementById("search").innerHTML = x;
+     }
+    else{
+        document.getElementById("search").innerHTML = "URL unknown";
+    }
+}

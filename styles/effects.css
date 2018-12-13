@@ -382,7 +382,6 @@ form {
 
 input {
   width: 100%;
-    width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -391,6 +390,21 @@ input {
 a {
     margin: 2em;;
     clear: both;
+    
+}
+
+.box{
+    background:deeppink;
+    bottom: 10px;
+    height:100px;
+    position:absolute;   
+    left: 10px;
+    bottom: 20px;
+    clear:both;
+}
+
+button{
+    clear:both;
 }
 
 
