@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+
+    <head>
+        <meta charset ="utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <title>Page Layout</title> 
+		<script src="scripts/CSS.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/CSS_adapt.css">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts/JQuery.js"></script>
+	</head>
+	<body>
+
+		<h1>COOL CSS DESIGN</h1>
+		
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<ul>
+				<li><a href="CSS">CSS Basics</a><br /></li>
+				<li><a href="CSS_margin.html">Box Model</a><br/></li>
+				<li><a href="CSS_measure.html">Measure</a><br/></li>
+				<li><a href="CSS_text_lists.html">Text</a></li>
+				<li><a href="CSS_background.html">Background</a></li>
+				<li><a href="CSS_navigation.html">Navigation</a></li>
+			</ul>
+		</nav>
+		
+		<figure class="corner-image">
+			<img src="images/Magnolia.png" alt="Magnolia">
+		</figure>
+		
+		<article>
+            <header>
+                <h2>CSS Layouts: How to make your document suitable for different screens and printing</h2>
+            </header>
+        
+            <section>
+                <header>
+				    <h3>Adapting a document to different screens</h3>
+			     </header>
+            
+                <p>
+                    The viewer of your page might be using a desktop, a cellphone, a laptop or a pad for viewing the page, which is important to       consider in your CSS design. To be able to adapt the page to different screen sizes, you need to avoid large fixed objects, that 
+                    would be hard to show on a small screen, and avoid things that depend on a fixed length. You could also apply dfferent styling to differnet screens. You could use the grid view for the adaptation. All HTML elements should have their box-sizing set to border-box. You can also use a viewport meta tag, like this &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                </p>
+            </section>
+        
+            <section>
+			     <header>
+				    <h3>Adapting a document to printers</h3>
+			     </header>		
+                
+                <p>
+                    <a href="CSS_printers">Here</a> you can see an exemple of how to adapt a document to printers. 
+                </p>
+			</section>
+		</article>
+		
+		<footer>
+			Posted by: Ella Elonen
+			<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+		</footer>
+
+		<details>
+			<summary> Copyright 2018-2021.</summary>
+			<p> By Ella Elonen</p>
+			<p>All content on this site can be shared according to the GNU General Public license</p>
+		</details>
+	</body>
+</html>

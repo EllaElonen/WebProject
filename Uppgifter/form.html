@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
-            <meta charset =" utf-8"> 
+            <meta charset ="utf-8"> 
             <meta name="author" content="Ella Elonen">
             <meta name="description" content="Free Web tutorials">
             <meta name="keywords" content="HTML">
             <meta name="generator" content="Visual Studio Code 1.28.2">
-            <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+            <meta name="robots" content="noindex, nofollow">
             <meta http-equiv="refresh" content="3000">
+                
             <title>Forms</title>
+                
 			<link rel="stylesheet" type="text/css" href="styles/form.css">
 			<script src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
             <script src="scripts/form_action.js"> </script>
@@ -19,7 +21,7 @@
     <body>
 
         <h1>Examples of Forms</h1>
-        <form action="" onsubmit="validate_number_input()">
+        <form onsubmit="validate_number_input()">
             First name: <input type="text" name="fname" /><br />
             Last name: <input type="text" name="lname" /><br />
             Desired password: <input type="text" name="pw1" id="pw1" /><br />
@@ -38,27 +40,37 @@
         </p> 
 
         <p>
-            HTML5 has added the following input types: email, url, number, range, datetime-local, date, 
-            month, week, time.
+            HTML5 has added the some new input types, like email, url, number, range, date, 
+            month, week, time, which you see examples of below. datetime-local has been left out here, because many browsers have removed the support for it.
         </p>
 
-        <form>
-            <figcaption>email</figcaption>
+        <form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi">
+            <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            email <br>
             <input type="email">
-            <figcaption>url</figcaption>
+            url <br>
             <input type="url">
-            <figcaption>number</figcaption>
+            number <br>
             <input type="number" name="quantity" min="1" max="5" step=5>
-            <figcaption>range</figcaption>
+            range <br>
             <input type="range" name="quantity" min="1" max="5" step=5>
-            <figcaption>datetime-local</figcaption>
-            <input type="datetime-local">
-            <figcaption>date</figcaption>
+            time <br>
+            <input type="time">                                            
+            date <br>
             <input type="date">
-            <figcaption>month</figcaption>
+            month <br>
             <input type="month">
-            <figcaption>week</figcaption>
+            week <br>
             <input type="week">
+            file
+            <input type="file" name="file">
         </form>
 	
 	<footer>

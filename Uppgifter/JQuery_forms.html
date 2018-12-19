@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+
+    <head>
+        <meta charset ="utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <meta name="robots" content="noindex, nofollow">
+		
+        <title>JQuery tabs</title> 
+		<link rel="stylesheet" type="text/css" href="styles/JQuery_forms.css">
+            
+            
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+            
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+
+		<header>
+			<h1>COOL JAVASCRIPT & JQUERY</h1>
+		</header>
+		
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br/>
+			<ul>
+				<a href="CSS">CSS Basics</a><br />
+				<a href="CSS_margin.html">Box Model</a><br />
+				<a href="CSS_measure.html">Measure</a><br />
+				<a href="CSS_text_lists.html">Text</a>
+				<a href="CSS_background.html">Background</a>
+				<a href="CSS_navigation.html">Navigation</a>
+			</ul>
+		</nav>
+        
+        <h2>Changing the properties of a picture with JQuery</h2>
+		
+		<figure class="corner-image">
+            <img src="images/Magnolia.png" alt="Magnolia">
+		</figure>
+        
+        <h2>Text boxes</h2>
+        
+        <form onsubmit="validate_number_input()">
+            First name: <input type="text" name="fname" /><br />
+            Last name: <input type="text" name="lname" /><br />
+            Desired password: <input type="text" name="pw1" id="pw1" /><br />
+            Repeat password: <input type="text" name="pw2" id="pw2" /><br />
+            <textarea rows="4" cols="50" placeholder="Write a longer text here"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        
+		<footer>
+			Posted by: Ella Elonen
+			<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+		</footer>
+
+		<details>
+			<summary> Copyright 2018-2021.</summary>
+			<p> By Ella Elonen</p>
+			<p>All content on this site can be shared according to the GNU General Public license</p>
+            
+		</details>
+        
+		<script src="scripts/JQuery_forms.js"></script>
+	</body>
+</html>

@@ -45,7 +45,7 @@ $(document).ready(function(){
         $(".box").css('animation-timing-function', 'linear');
     });
     
-    $("Alert after animation").click(function(){
+    $(".animatealert").click(function(){
         $("p").hide("slow", function(){
             alert("The paragraph is now hidden");
         });

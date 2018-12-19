@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-        <meta charset =" utf-8">
+        <meta charset ="utf-8">
         <meta name="author" content="Ella Elonen">
         <meta name="description" content="Free Web tutorials">
         <meta name="keywords" content="HTML">
-        <meta name="generator" content="Visual Studio Code 1.28.2">
+        <meta name="generator" content="0">
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-        <meta http-equiv="refresh" content="3000">
-        <title>Tables, lists and Images</title>
+        
+        <title>Tables</title>
 		<link href="styles/tables_images.css" rel="stylesheet">
 </head>       
 <body>
 
-	<section>
-		<header>
-			<h1>Adding Tables to Your Website</h1>
-		</header>
-
-        <p> 
-            Tables are written by writing text inside td tags for regular rows, and &lt;th&gt; for headings. 
-            Every piece of data inside the &lt;tr&gt; tags is surrounded by a &lt;td&gt;. 
-            Background color is added to columns by enclosing them in 
-            a &lt;colgroup span="2"&gt; tag.
-        </P>
+    <article>
+        <header>
+            <h1>Tables, lists and Images</h1>
+        </header>
+         
+        <section>
+            <header>
+                <h2>Styling Tables</h2>
+            </header>
+            <p> 
+                Tables are written by writing text inside td tags for regular rows, and &lt;th&gt; for headings. 
+                Every piece of data inside the &lt;tr&gt; tags is surrounded by a &lt;td&gt;. 
+                Background color is added to columns by enclosing them in 
+                a &lt;colgroup span="2"&gt; tag. The color is defined in a separate CSS file. Read more about how to 
+			     style with CSS here <a href="CSS.html">Here</a>.
+            </P>
 
 		<table id="colgroup">
-		<colgroup span="2">
-			<col>
-				<caption>Table Heading</caption>
+            Table Heading
+		      <colgroup span="2">
 				<tbody>
 					<tr>
 						<th>Column heading</th>
@@ -52,7 +56,6 @@
 						<td>TD Table data</td>
 					</tr>
 				</tbody>
-				<col>
 			</colgroup>
         </table>
 		
@@ -61,7 +64,7 @@
 		</p>
 		
 		<table id="classic">
-            <caption>Table Heading</caption>
+            Table Heading
             <tbody>
                 <tr>
                     <th>Column heading</th>
@@ -93,77 +96,76 @@
 
     <section>
         <header>
-        <h1>Writing Lists</h1> 
+            <h2>Writing Lists</h2> 
         </header>
-		
-        <p>
+
+            <p>
             Lists can be ordered or unordered. The following list is unorderd, written 
             with the &lt;ul&gt; tag.
-        </p>    
+            </p>    
 
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
             </ul>
 
-        <p>
-            The following list is orderd, written with an &lt;ol&gt; tag, 
-            including a type attribute to tell it to order with numbers. 
-            Alphabet or roman numbers are also possible. 
-        </p>   
+            <p>
+                The following list is orderd, written with an &lt;ol&gt; tag, 
+                including a type attribute to tell it to order with numbers. 
+                Alphabet or roman numbers are also possible. 
+            </p>   
 
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-		</ol>
-			
-        <p>
-            The following list also adds a description, using the &lt;dt&gt; tag to 
-            define the item, followed by &lt;dd&gt; to add a description to the item. The whole list 
-            is contained by &lt;dl&gt; tags.
-        </p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+            <p>
+                The following list also adds a description to the table, using the &lt;dt&gt; tag to 
+                define the item, followed by &lt;dd&gt; to add a description to the item. The whole list 
+                is contained by &lt;dl&gt; tags.
+            </p>
 
-            <dl>
-            <dt>HTML</dt>
-            <dd>-A markup language for structuring websites</dd>
-            <dt>CSS</dt>
-            <dd>-A language for adding style to web sites</dd>
-            <dt>JavaScript</dt>
-            <dd>-A programming language used for adding behavior to websites</dd>
-            </dl>
+                <dl>
+                <dt>HTML</dt>
+                <dd>-A markup language for structuring websites</dd>
+                <dt>CSS</dt>
+                <dd>-A language for adding style to web sites</dd>
+                <dt>JavaScript</dt>
+                <dd>-A programming language used for adding behavior to websites</dd>
+                </dl>
+        </section>
 				
-		<p> 
-			As you see the tables and lists are styled with different colors on different rows. That is accomplished by 
-			the cascading feature of CSS. Read more about it here: <a href="CSS.html">CSS<a/>
-		</p>
-
-        <hr>
         <section>
             <header>
-                <h1>Adding Pictures to Your Website</h1>
+                <h2>Adding Pictures to Your Website</h2>
             </header>
-
+            
             <p>
                 Pictures can be added to a webpage with the img tag, and a source attribute that gives 
                 the location of the picture file. 
             </p>
 
             <figure>
-                <img src ="images/Sunset.jpg" alt ="Sunset" style="width:600px;height:400px;"">
+                <img src ="images/Sunset.jpg" alt ="Sunset">
                 <figcaption>Fig.1 Sunset in Bandhagen.</figcaption>
             </figure>
+        </section>                                                                              
+    </article>
 
-            <aside>
-                <h4>Bandhagen</h4>
-                <p>Bandhagen is a suburbs south of Stockholm</p>
-            </aside>
-        </section>
-			<footer>
+    <aside>
+        <h4>Bandhagen</h4>
+        <p>
+            Bandhagen is a suburbs south of Stockholm. And this is an aside element, that has little relation to the rest 
+            of the text.
+    </p>
+    </aside>
+                                                                       
+    <footer>
 		Posted by: Ella Elonen
-		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
-	</footer>
+		<a href="mailto:ellaelonen@yahoo.se">Contact</a>
+    </footer>
 
 	<details>
 		<summary> Copyright 2018-2021.</summary>

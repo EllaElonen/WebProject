@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+
+    <head>
+        <meta charset ="utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0"><meta name="robots" content="noindex, nofollow">
+		
+        <title>JQuery pictures</title> 
+		<script src="scripts/JQuery2.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/pictures.css">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		
+	</head>
+	<body>
+
+		<header>
+			<h1>COOL JAVASCRIPT & JQUERY</h1>
+		</header>
+		
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+        
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br/>
+			<ul>
+				<a href="CSS">CSS Basics</a><br />
+				<a href="CSS_margin.html">Box Model</a><br />
+				<a href="CSS_measure.html">Measure</a><br />
+				<a href="CSS_text_lists.html">Text</a>
+				<a href="CSS_background.html">Background</a>
+				<a href="CSS_navigation.html">Navigation</a>
+			</ul>
+		</nav>
+        
+        <h2>Changing the properties of a picture with JQuery</h2>
+		
+		<figure class="corner-image">
+            <img src="images/Magnolia.png" alt="Magnolia">
+		</figure>
+        
+       <img src="images/Sunset.jpg" class="Sunset" width="284" height="213" alt="Sunset"><br>
+
+        <button class="change">Set the width of the image</button>
+        <button class="revert">Revert the width of the image</button>
+
+        <p>In the example above, we use JQuery to modify a property of an element back and forth, in this case the width of the picture.</p>
+    
+        <canvas class=".box" id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        
+        <button onClick="drawLine()" class="my_elem">Draw line</button>
+        <button onClick="drawText()" class="my_elem">Draw text</button>
+        <button onClick="drawGradient()" class="my_elem">Draw gradient</button>
+        <button onClick="drawShadow()" class="my_elem">Fill color and shadow</button>
+        <button onClick="drawCircle()" class="my_elem">Draw circle</button>
+        <button onClick="drawBezier()" class="my_elem">Bezier´s curve</button>
+        <button onClick="drawImage()" class="my_elem">Draw image</button>
+        <button onClick="drawCircle()" class="my_elem">Draw pattern</button>
+        <button onClick="putImage()" class="my_elem">Save image</button>
+        
+		<footer>
+			Posted by: Ella Elonen
+			<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+		</footer>
+
+		<details>
+			<summary> Copyright 2018-2021.</summary>
+			<p> By Ella Elonen</p>
+			<p>All content on this site can be shared according to the GNU General Public license</p>
+            
+		</details>
+        
+		<script src="scripts/pictures.js"></script>
+	</body>
+</html>

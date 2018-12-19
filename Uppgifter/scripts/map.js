@@ -1,5 +1,0 @@
-
-var alt;
-
-function showResult{
-}

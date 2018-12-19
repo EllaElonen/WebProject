@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+        <meta charset =" utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <meta name="robots" content="noindex, nofollow">
+       
+        <title>Interactive Maps</title>
+		<link href="styles/map.css" rel="stylesheet">
+		<script src="scripts/CSS.js"></script>
+   </head>
+
+   <body>
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+	
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<a href="href="about.html">About</a><br/>
+			<a href="#">Services</a><br />
+			<a href="#">Contact</a>
+		</div>  
+    </article>
+        <header>
+            <h1>Interactive Maps</h1>
+        <header>
+		
+		<p>
+			This picture illustrates the map element, and how it can be made interactive. Click on different parts of 
+			the picture to make different things happen! This is all done inside the map element of HTML,
+			by attaching references to different objects, and defining an area attached to a particular alternative. 
+			For example: &lt;area shape="rect" coords="0,0,100,200" href="images/BlowHeart.jpg" alt=Magnolia"&gt;
+		</p>
+
+        <figure>
+            <img src="images/Magnolia.png" width="300" height="200" alt="Pictures" usemap="#leavesmap">
+        </figure>
+
+        <map name="leavesmap">
+            <area shape="rect" coords="0,0,100,200" href="images/BlowHeart.jpg" alt=Magnolia">
+            <area shape="circle" coords="200,50,50" href="images/Magnolia.png" alt="BlowHeart">
+             <area shape="circle" coords="250,180,50" href="images/Dreaming.jpg" alt="Dreaming">
+        </map
+		
+		<div class="sidebar">
+			<h3>More on maps</h3>
+			<p>
+			    The map tag is a simple way to build interactive pictures and maps.
+				You will find another similar example, and more information here: 
+			<a href="https://www.w3schools.com/tags/tag_map.asp">W3Schools</a>
+			</p>
+		</div>
+	</article>
+	
+	<footer>
+		Posted by: Ella Elonen
+		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	</footer>
+
+	<details>
+		<summary> Copyright 2018-2021.</summary>
+		<p> by Ella Elonen.</p>
+		<p>All content on this site can be shared according to the GNU General Public license</p>
+	</details>
+    </body>
+</html>

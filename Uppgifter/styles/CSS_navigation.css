@@ -1,0 +1,221 @@
+ html{
+ }
+ 
+  body {
+	padding-right: 50px;
+	background-image: url("../images/WoodLeaves.jpg");
+	background-repeat: repeat;
+    background-attachment: fixed;
+	background-position: center; 
+  }
+  
+  p {
+    color: brown; 
+    font-family: Times New Roman, Arial;
+    font-size: 1em;
+	padding: 20px;
+	background-color:khaki;
+	border-radius: 25px;
+  }
+
+ 
+  h1, h2, h3 {
+    color: yellow;
+    font-family: Batang, Times New Roman;
+    border-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+	padding-left: 20px; 
+  }
+  
+  h1 {
+    font-size: 4em;
+  }
+  
+  h2{
+  font-size: 3em;
+  }
+  
+  h3{
+	   font-size: 2.7em;
+  }
+
+  #logo {
+      font-family: Batang;
+      font-size: 2em;
+      color: maroon;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color:gold;
+      border-radius: 0 0 10px 10px;
+      padding: 10px;
+  }
+  
+  article {
+	max-width: 760px;
+	margin: 0 auto;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: saddlebrown;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:khaki;
+    display: khaki;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: saddlebrown;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.sidenav .menu{
+	color: saddlebrown;
+	font-size:30px;cursor:pointer
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 30px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+  footer p {
+    color: maroon;
+    font-family: Batang, Times New Roman;
+    font-size: 00,5em;
+  }
+  
+  details p {
+    color: maroon;
+    font-family: Batang, Times New Roman;
+    font-size: 00,5em;
+  }
+  
+  .imglink{
+	  margin: 50px;
+	  padding: 10px;
+	  height: 1;
+	  width: 2;
+	  float: bottom-right;
+	  border:1;
+  }
+  
+ .linkButton {
+	background-color: greenyellow;
+	border: solid;
+	background-color: green;
+    color: wheat;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	border-radius: 5px; 
+}
+
+.redoval{
+	background-color: red;
+    border: solid deeppink;
+	font-size:1.5em;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 50%;
+}
+
+.blue{
+    background-color:blue; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.greenrouunded{
+	background-color: green; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 8px;
+}
+  
+.yellow{
+	background-color: yellow;
+  }
+  
+ .lime a:active {
+	background-color: limegreen;
+  }
+  
+  .lime a:hover{
+	color: limegreen;
+  }
+  
+  lime a:hover{
+	  color: purple;
+  }
+  
+  ul{
+	 color: brown; 
+    font-family: Times New Roman, Arial;
+    font-size: 1.5em;
+	padding: 20px;
+	padding-left:50;
+	background-color:khaki;
+	border-radius: 25px;
+	text-indent: 50px;
+	list-style-position: inside;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
