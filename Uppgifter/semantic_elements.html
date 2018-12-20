@@ -10,28 +10,119 @@
         <meta name="generator" content="0">
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         
-        <title>Semantic elements for text</title>
+        <title>Semantic elements</title>
 		<link href="styles/tables_images.css" rel="stylesheet">
 </head>       
 <body>
+    <span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br/>
+			<ul>
+				<a href="CSS">CSS Basics</a><br />
+				<a href="CSS_margin.html">Box Model</a><br/>
+				<a href="CSS_measure.html">Measure</a><br/>
+				<a href="CSS_text_lists.html">Text</a>
+				<a href="CSS_background.html">Background</a>
+				<a href="CSS_navigation.html">Navigation</a>
+			</ul>
+		</nav>
+    
+    <article>
+        <section>
+            <header>
+                <h1>Semantic elements</h1>
+            </header>
+            
+            <p>
+                HTML5 has many new semantic elements, which will be presented in the following. 
+            </p>
+    
+            <header>
+                <h2>Semantic elements for text</h2>
+            </header>
+    
+            <p>
+                The &lt;wbr&gt; element provides a way to specify for a browser how the browser can cut the text, for example here<wbr>
+                and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr> and         here <wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr>
+                and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr>
+            </p>
+    
+            <p>
+                The datetime attribute of time element is new in HTML5. For examle, this was written on &lt;time datetime="2018-12-19 20:00"&gt;<time   datetime="2018-12-19 20:00">current date</time>&lt;/time&gt;. This doesn´t usually give any special effects in browsers, for example here     "current date" shows up in normal text with no date. If you want to show the date, you have to add it manually. 
+            </p>
+    
+            <p>
+                The mark tag is new in HTML5. It can be used to mark text, and shows up as text with <mark>yellow highlightning</mark> in many browsers. 
+            </p>
+        </section>
+    
+        <section>
+            <header>
+                <h2>Semantic Elements for Structure</h2>
+            </header>
+            
+                <p>
+                   The following semantic elements are new in HTML5 and are used to give the page a predictable structure, which might be helpful for search engines, screen readers, and even humans reading the HTML code. 
+                </p>
+    
+             <header>
+                <h3>Article and section</h3>
+            </header>
+            
+            <p>
+                The article element can be thought of as a newspaper or magazine article, something that can be published independently. The section element is a part of the page that belongs together, but is not necessarily understood independently of the rest of the page. On this page, for example, most of the contents are included in an article tag, apart from the footer and side bar. The artice is divided into sections for each subject covered in the article.
+            </p>
+            
+             <header>
+                <h3>Navigation</h3>
+            </header>
 
-    <header>
-        <h1>Semantic elements for text</h1>
-    </header>
-    
-    <p>
-        The &lt;wbr&gt; element provides a way to specify for a browser how the browser can cut the text, for example here<wbr>
-        and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr> and here <wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr>
-        and here<wbr> and here <wbr> and here <wbr> and here<wbr> and here <wbr> and here <wbr>
-    </p>
-    
-    <p>
-        The datetime attribute of time element is new in HTML5. For examle, this was written on &lt;time datetime="2018-12-19 20:00"&gt;<time datetime="2018-12-19 20:00">current date</time>&lt;/time&gt;. This doesn´t usually give any special effects in browsers, for example here "current date" shows up in normal text with no date. If you want to show the date, you have to add it manually. 
-    </p>
-    
-    <p>
-        The mark tag is new in HTML5. It can be used to mark text, and shows up as text with <mark>yellow highlightning</mark> in many browsers. 
-    </p>
+            <p>
+                The nav tag can be used for surrounding a navigation element, like the navigation bar that you see if you click on "open side menu".
+            </p>
+            
+            <header>
+                <h3>Figure, figcaption</h3>
+            </header>
+            
+            <p>
+                Pictures can be added to a webpage with the img tag, and a source attribute that gives 
+                the location of the picture file. 
+            </p>
+
+            <figure>
+                <img src ="images/Sunset.jpg" alt ="Sunset">
+                <figcaption>Fig.1 Sunset in Bandhagen.</figcaption>
+            </figure>
+            
+            <header>
+                <h3>aside</h3>
+            </header> 
+       
+            <aside>
+                <h4>Bandhagen</h4>
+                <p>
+                    Bandhagen is a suburban area south of Stockholm. And this is an aside element, that has little relation to the rest 
+                    of the text.
+                </p>
+            </aside>
+            
+            <header>
+                <h3>Header and footer</h3>
+            </header>
+            
+            <p>
+                The h3 element right above this paragraph is surrounded by header tags. The purpose or it is to contain headings and other header elements, like banners or pictures accompanying the heading. A footer element is normally found at the end of the page, like the one on this page that contains contact information. 
+            </p>
+            
+            <header>
+                <h3>Details and Summary</h3>
+            </header>
+            
+            <p>
+            </p>
+        </section>                                                                              
+    </article>
                                                                        
     <footer>
 		Posted by: Ella Elonen

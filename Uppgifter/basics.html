@@ -1,0 +1,338 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+
+    <head>
+        <meta charset ="utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+        <meta name="robots" content="noindex, nofollow">
+        <meta http-equiv="refresh" content="30">
+            
+        <title>Basics</title> 
+		<link href="styles/tables_images.css" rel="stylesheet">
+		<script src="scripts/CSS.js"></script>	
+    </head>
+
+    <body>
+        <article>
+            <header>
+                <h1>The Structure of an HTML Page</h1>
+            </header> 
+            
+			<p>
+				When a browser loads a webpage, it creates a Document Object Model, DOM, of the page. You can use 
+				JavaScript to change objects and their presentation styles in this structure. For example, you could replace 
+				a paragraph, a picture or a table with another, or give it a background color as a response to a click from a user, for example. 
+				So far, however, we are only concerned with the HTML-part. 
+			</P>
+            
+            <p> 
+                The basic structure of an HTML-page consists of a &lt;!DOCTYPE&gt;-which defines the markup language 
+                so that the browser can display content correctly, and two &gt;html&lt;-tags, to tell the browser that the page is written 
+				in HTML. containing a head and a body element. The head contains metainformation about the page, and can also contain links to JavaScript and CSS files
+            </p> 
+        
+            <header>
+                <h2>Meta information                                                                                                                                                                                              in the head element</h2>
+            </header> 
+        
+            <p>
+                The meta tags contained in the head element of a page can contain meta information about the page, like encoding, 
+				author, description, keywords, page title, software that was used to generate it, how search engines should treat it,
+                how often the browser should refresh it, etc. Here, for example, &lt;meta http-equiv="refresh" content="30"&gt; was used to tell the page to refresh every 30 seconds. 
+            </p>
+        
+            <p> 
+                This page contains the following meta tags:<br>
+                charset - specifies the encoding, for example utf-8<br>
+                author - the person who created it<br>
+                description - a description of the content<br>
+                generator - The software used to generate it. Here, the value is set to zero because no software was used for generating the document.<br>
+                keywords - what the search engines should be looking for<br>
+                robots - defining desired behavior for search engines (set to noindex, nofollow that tells robots <br>
+				not to index it or follow links on that page).<br>
+            </p>
+        
+            <header>
+                <h2>Body elements</h2>
+            </header> 
+        
+            <p>
+                The body contains the elements that are visible on the page. 
+            </p>
+        
+            <header>
+                <h3> Paragraphs</h3>
+            </header> 
+
+            <p>
+                Regular paragraphs can be written inside the &lt;p&gt; tag. 
+            </p>
+	
+            <header>
+                <h3>The pre tag</h3>
+            </header>
+
+            <pre>
+                The pre tag contains text in fixed-width font, with spaces          and line breaks
+                preserved
+            </pre>
+        
+        
+            <header>
+                <h3>Span</h3>
+            </header> 
+        
+            <p>
+                Marking text can be done with the span element. If you want to make something apply to certain parts of the text, you surround them with span tags. This can be done for styling or semantic purposes. <span class="illustrateSpan">This sentence is surrounded with span tags with a class attribute illustrateSpan.</span>
+            </p>
+        
+            <header>
+                <h3> Quotes</h3>
+            </header> 
+        
+            <p> 
+                Block quotes can be written in blockquote tags. This illustrates a block quote from another website, 
+                https://www.quackit.com/html/tags/html_blockquote_tag.cfm:
+            </p>
+
+            <blockquote>The HTML &lt;blockquote&gt; tag is used for creating the 'blockquote' element. This element represents content that is quoted from another source.
+
+                Browsers usually render &lt;blockquote&gt; text as indented text. 
+                This results in an indented paragraph (or multiple indented paragraphs 
+                if the &lt;blockquote&gt; spans multiple paragraphs). For shorter quoted text 
+                that needs to display within a non-quoted paragraph, use &lt;q&gt; tag. 
+                    Most browsers surround &lt;q&gt; text with quotation marks.
+                        
+                Syntax
+                The &lt;blockquote&gt; tag is written as &lt;blockquote&gt;&lt;/blockquote&gt; 
+                with the quoted content inserted between the start and end tag.
+                Like this:                        
+                &lt;blockquote&gt;Quoted text here...&lt;blockquote&gt;&lt;/blockquote&gt;
+                <cite> - quackit</cite>
+            </blockquote>        
+        
+        <header>
+            <h3> The div element</h3>
+        </header> 
+        
+        <p>
+            The div element can be used as a container for basically any kind of content, like text, ictures, lists, etc. In HTML5, semantic
+            elements like article and section are preferred when applicable, but otherwise it is still okay to use div as a container when needed. 
+        </p>
+        
+        <div>
+            This is an exmple of a div element. When filled with text, it can look like a regular paragraph, if nothing else has been specified. 
+            You could specify different classes of div elements, or give them an id, and apply a certain kind of styling to them if you wish.
+        </div>
+        
+        <header>
+                <h2>Tables</h2>
+            </header>
+            <p> 
+                Tables are written by writing text inside td tags for regular rows, and &lt;th&gt; for headings. 
+                Every piece of data inside the &lt;tr&gt; tags is surrounded by a &lt;td&gt;. 
+                Background color is added to columns by enclosing them in 
+                a &lt;colgroup span="2"&gt; tag. The color is defined in a separate CSS file. Read more about how to 
+			     style with CSS here <a href="CSS.html">Here</a>.
+            </P>
+
+		<table id="colgroup">
+            Table Heading
+		      <colgroup span="2">
+				<tbody>
+					<tr>
+						<th>Column heading</th>
+						<th>Column heading</th>
+						<th>Column heading</th>
+					</tr>
+					<tr>
+						<td>TD Table data</td>
+						<td>TD Table data</td>
+						<td>TD Table data</td>
+					</tr>
+					<tr>
+						<td>TD Table data</td>
+						<td>TD Table data</td>
+						<td>TD Table data</td>
+					</tr>
+					<tr>
+						<td>TD Table data</td>
+						<td>TD Table data</td>
+						<td>TD Table data</td>
+					</tr>
+				</tbody>
+			</colgroup>
+        </table>
+		
+		<p>
+			One more example of a table:
+		</p>
+		
+		<table id="classic">
+            Table Heading
+            <tbody>
+                <tr>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+					<th>Column heading</th>
+                </tr>
+                <tr>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+					<td>TD Table data</td>
+                </tr>
+                <tr>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+					<td>TD Table data</td>
+                </tr>
+				<tr>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+                    <td>TD Table data</td>
+					<td>TD Table data</td>
+                </tr>
+            </tbody>
+        </table>
+     
+     <header>
+            <h2>Writing Lists</h2> 
+        </header>
+
+            <p>
+            Lists can be ordered or unordered. The following list is unorderd, written 
+            with the &lt;ul&gt; tag.
+            </p>    
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <p>
+                The following list is orderd, written with an &lt;ol&gt; tag, 
+                including a type attribute to tell it to order with numbers. 
+                Alphabet or roman numbers are also possible. 
+            </p>   
+
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+            <p>
+                The following list also adds a description to the table, using the &lt;dt&gt; tag to 
+                define the item, followed by &lt;dd&gt; to add a description to the item. The whole list 
+                is contained by &lt;dl&gt; tags.
+            </p>
+
+                <dl>
+                <dt>HTML</dt>
+                <dd>-A markup language for structuring websites</dd>
+                <dt>CSS</dt>
+                <dd>-A language for adding style to web sites</dd>
+                <dt>JavaScript</dt>
+                <dd>-A programming language used for adding behavior to websites</dd>
+                </dl>
+
+            <header>
+                <h2>Adding Pictures to Your Website</h2>
+            </header>
+            
+            <p>
+                Pictures can be added to a webpage with the img tag, and a source attribute that gives 
+                the location of the picture file. 
+            </p>
+
+            <figure>
+                <img src ="images/Sunset.jpg" alt ="Sunset">
+                <figcaption>Fig.1 Sunset in Bandhagen.</figcaption>
+            </figure>
+        
+        <header>
+            <h3>Interactive Maps</h3>
+        </header>
+		
+		<p>
+			This picture illustrates the map element, and how it can be made interactive. Click on different parts of 
+			the picture to make different things happen (click the back arrow of the browser to get back to this page). This is all done inside the map element of HTML, by attaching references to different objects, and defining coordinates for an area attached to a particular alternative. For example: &lt;area shape="rect" coords="0,0,100,200" href="images/BlowHeart.jpg" alt=Magnolia"&gt; 
+		</p>
+
+        <figure>
+            <img src="images/Sunset.jpg" width="300" height="200" alt="Pictures" usemap="#leavesmap">
+        </figure>
+
+        <map name="leavesmap">
+            <area shape="rect" coords="0,0,100,200" href="images/BlowHeart.jpg" alt="Magnolia">
+            <area shape="circle" coords="200,50,50" href="images/Magnolia.png" alt="BlowHeart">
+            <area shape="circle" coords="250,180,50" href="images/Dreaming.jpg" alt="Dreaming">
+        </map>
+        
+        <header>
+            <h3>Links</h3>
+        </header>
+    
+        <p>
+            Links are written with the &lt;a&gt; containing the attribute href, defining the adress of the page you 
+            want to link to.
+        </p>
+     
+        <header>
+            <h4>Page Links</h4>
+        </header>
+
+        <p>Absolute links are full web addresses, including www..., whereas relative links specify a file that has a relation to the page where the     link is located. 
+        </p>
+
+        <p>
+            <a href="https://www.w3schools.com">This is an absolute link to w3schools that contains more information on links, 
+                quotes and other important concepts in web development.>
+            </a>
+        </p>
+        
+        <p>
+            The following is an example of a relative link: The path is given relative to this page. This document resides in the same folder as the current html document. 
+        </p>
+                
+        <p>
+            <a href="semantic_elements.html">Click Me</a>
+        </p>
+     
+        <header>
+            <h4>Image Link</h4>
+        </header>
+
+        <p>
+            This is an example of an image link.
+        </p>
+     
+        <a href="images/Sunset.jpg">Click to see a picture</a>
+     
+        <header>
+            <h4>Contact Link</h4>
+        </header>
+
+        <a href="mailto:ellaelonen@yahoo.se">Contact</a>
+    </article>
+
+	<footer>
+		Posted by: Ella Elonen
+		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	</footer>
+
+	<details>
+		<summary> Copyright 2018-2021.</summary>
+		<p> by Ella Elonen.</p>
+		<p>All content on this site can be shared according to the GNU General Public license</p>
+	</details>
+ </html>
+
+

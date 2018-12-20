@@ -20,39 +20,56 @@
 
     <body>
 
-        <h1>Examples of Forms</h1>
-        <form onsubmit="validate_number_input()">
-            First name: <input type="text" name="fname" /><br />
-            Last name: <input type="text" name="lname" /><br />
-            Desired password: <input type="text" name="pw1" id="pw1" /><br />
-            Repeat password: <input type="text" name="pw2" id="pw2" /><br />
-            <textarea rows="4" cols="50" placeholder="Write a longer text here"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-
+        <header>
+            <h1>Examples of Forms</h1>   
+        <header>
+            
+        <p>In the following, you will see some examples of forms in HTML.</p>
+            
+        <header>
+            <h2>Input types</h2>
+        </header>
+            
+            
         <p> 
             Input fields are specified with the &lt;form&gt; tags, containing &lt;input&gt; tags 
             for every input field. The input tag has a type attribute that gives the type of the input, 
             like text or password in the form above. It also has a name attribute that gives the input 
             a name, and an id attribute to be identified by. For longer text input the textarea tag can 
             be used. In the form above the textarea has a placeholder text, specified in the placeholder 
-            attribute, giving the user a clue to what kind of input is being collected. 
+            attribute, giving the user a clue to what kind of input is being collected. These input elements do not send any information, but are merely examples of how inputs can look like. For an example of how to send input, see "Sending input" at the end of the page. The first field (first name) gets fokus automatically, because of the autofocus attribute of the first element.
         </p> 
+            
+        <form>
+            First name: <input type="text" name="fname" autofocus/><br/>
+            Last name: <input type="text" name="lname"/><br/>
+            
+            <label for="password">Type a fake password here</label><br/>
+            <input type="password"><br/>
+            <br><input type="reset" value="Reset"><br/>
+            file<br/>
+            <input type="file" name="file"><br>
+            image <br>
+            <input type="image" src="images/Sunset.jpg" alt="Submit"><br>
+            button <br>
+            <input type="button" value="button"><br/>
+            radiobutton<br/>
+            <input type="radio"><br/>
+            checkbox <br/>
+            <input type="checkbox"><br/>
+        </form>
+            
+        <form>
+            <textarea rows="4" cols="50" placeholder="Write a longer text here"></textarea>
+            <input type="submit" value="Submit">
+        </form>
 
         <p>
             HTML5 has added the some new input types, like email, url, number, range, date, 
-            month, week, time, which you see examples of below. datetime-local has been left out here, because many browsers have removed the support for it.
+            month, week, time, which you see examples of below. datetime-local has been left out here, because many browsers have removed the support for it. The range element has the attributes min, max and step, to specify the range and steps between options, as exemplified below.
         </p>
-
-        <form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi">
-            <input list="browsers" name="browser">
-                <datalist id="browsers">
-                    <option value="Internet Explorer">
-                    <option value="Firefox">
-                    <option value="Chrome">
-                    <option value="Opera">
-                    <option value="Safari">
-                </datalist>
+        
+        <form>
             email <br>
             <input type="email">
             url <br>
@@ -69,19 +86,81 @@
             <input type="month">
             week <br>
             <input type="week">
-            file
-            <input type="file" name="file">
+            file <br>
         </form>
-	
-	<footer>
-		Posted by: Ella Elonen
-		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
-	</footer>
+            
+        <header>
+            <h2>Grouping input</h2>
+        </header>
+        
+        <p>
+            There are different ways of grouping elements in HTML. The form below uses the fieldset tag to group the options togther, and 
+            the legend tag is used to add a caption before the group.
+        </p>
+        
+        <form>
+             <fieldset>
+                <legend>Personal information:</legend>
+                    Name: <input type="text"><br>
+                    Email: <input type="text"><br>
+                    Date of birth: <input type="text">
+            </fieldset>
+        </form>
+        
+        <p>
+           The select tag can be used for letting a user choose beetween different options surrounded by option tags, like below. They can be grouped using the optgroup tag inside the select tag, around the options you want to group together. See the example below. The name of the group is specified in the label attribute of the optgroup tag.
+        </p>
 
-	<details>
-		<summary> Copyright 2018-2021.</summary>
-		<p> by Ella Elonen.</p>
-		<p>All content on this site can be shared according to the GNU General Public license</p>
-	</details>
+        <form>
+            <select>
+                <legend>Choose a flower or animal</legend>
+                <optgroup label="animals">
+                    <option value="beaver">beaver</option>
+                    <option value="squirrel">squirrel</option>
+                </optgroup>
+                <optgroup label="flowers">
+                    <option value="rose">rose</option>
+                    <option value="daisy">daisy</option>
+                </optgroup>
+            </select>
+        </form>
+            
+        <p>
+            The following form will suggest input if you start typing. The suggestions are given inside option tags.
+        </p>
+                        
+        <form>
+            <label>Type the name of your browser</label>
+            <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+        </form> 
+            
+        <header>
+            <h2>Sending input</h2>
+        </header>
+            
+        <p>The following will send your input to the page specified in the action atribute of the form element.</p>	
+        
+        <form method="get" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi">
+            <input type="file" name="file">
+            <input type="submit" value="Submit">
+        </form> 
+	
+	   <footer>
+		  Posted by: Ella Elonen
+		  <a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	   </footer>
+
+	   <details>
+		  <summary> Copyright 2018-2021.</summary>
+		  <p> by Ella Elonen.</p>
+		  <p>All content on this site can be shared according to the GNU General Public license</p>
+	   </details>
     </body>
 </html>
