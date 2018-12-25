@@ -7,8 +7,8 @@ html{
 }
 
 body {
-    font-family: Courier New, Helvetica, sans-serif;
-	size: A4 portrait;
+    font-family: "Times New Roman", Helvetica, sans-serif;
+	resize: A4 portrait;
 }
 
 p{
@@ -44,7 +44,7 @@ h2{
 }
 
 h3{
-	color: medium-orchid;
+	color: mediumorchid;
     text-align: center;
     font-size: 1.5em;
     float: right;
@@ -72,7 +72,7 @@ h3{
     text-decoration: none;
     font-size: 25px;
     color:white;
-    display: white;
+    display: block;
     transition: 0.3s;
 }
 
@@ -141,7 +141,6 @@ footer {
 		}
 }
 
-
 @media print {
 	html{
 		orphans:2;
@@ -158,6 +157,4 @@ footer {
 	padding-top: 10px;
 }
 
-/*.break{
-	clear:both;
-}*/
+

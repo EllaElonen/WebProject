@@ -8,9 +8,9 @@ html{
 
 body {
     margin: 2em;
-    color:balck;
+    color:black;
     font-family: Times, Helvetica, sans-serif;
-	size: A4 portrait;
+	resize: A4 portrait;
 }
 
 p{

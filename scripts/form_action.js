@@ -21,8 +21,25 @@ function print_alert(){
 }
 
 function validate_number_input(){
-    if (isNan(pw1))
+    if (isNan(pw1)){
         return true; 
-    alert('NaN'); 
+        }
+    else{
+    alert('number input'); 
     return false;      
+    }
+}
+
+function isFilled{
+    if pw1!=null;
+    return true;
+}
+
+function validate_form{
+    if pw1!=null{
+        return true
+    }
+    else{
+        return false
+    }
 }

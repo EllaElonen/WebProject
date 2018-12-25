@@ -3,7 +3,7 @@ body {
 	font-family:arial;
 	background-color: beige;
 	font-size:16px;
-	color:darkbrown;
+	color: #654321;
 }
 
 h1{
@@ -30,7 +30,7 @@ p.seagreenframe{
 }
 
 p.lightgreenframe{
-	line-height: pc;
+	line-height: 1pc;
 	border: solid seagreen;
 }
 
@@ -45,7 +45,7 @@ p.brownframe{
 }
 
 p.pinkframe{
-	line-height: 1i;
+	line-height: 2em;
 	border: 1px solid pink;
 }
 
@@ -65,7 +65,7 @@ p.grayframe{
 }
 
 .blueframe{
-	font-size:0,5i;
+	font-size:0,5cm;
 	border:solid blue;
 }
 

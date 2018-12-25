@@ -1,0 +1,180 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+
+    <head>
+        <meta charset ="utf-8">
+        <meta name="author" content="Ella Elonen">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML">
+        <meta name="generator" content="0">
+       <meta name="robots" content="noindex, nofollow">
+		
+        <title>CSS</title> 
+		<script src="scripts/CSS.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/CSS.css">
+    </head>
+
+    <body>
+	<div class="content">
+		<span id=menu onclick="openNav()">&#9776; Open side menu</span> 
+	
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br />
+			<a href="about.html">About</a><br />
+			<a href="#">Services</a><br />
+			<a href="#">Contact</a>
+		</div>  
+	
+        <article>	
+			<div id="logo"> Web development for beginners</div>
+			
+            <header>
+                <h1>How to make your HTML look great with CSS</h1>
+            </header> 
+
+            <section>
+				<header>
+					<h2>
+						How to Add CSS to Your Webpage
+					</h2>
+                </header>
+                
+				<p>
+					HTML provides a basic structure to a web page, consisting of elements like text, images, tables, maps etc. 
+					It does not define how these elements should be presented. That´s why you need CSS, Cascading Style Sheets, 
+					to define how you want your elements to be presented. In order to add style to your elements, you can apply 
+					CSS rules to selected HTML elements. For example, you can add a certain type and size of fonts, a certain color,
+					margins, space, or a background picture that is not part of the semantic content, but a purely presentational thing. 
+				
+					Most of the time it is best to write your CSS rules in a separate document. That 
+					way, it is easy to maintain, and you can apply the same style to all your 
+					HTML pages if you like. The following link was added to the HTML of 
+					this page, at the end of the head element, in order to link it to the CSS file: <br/>
+				&lt;link rel="stylesheet" type="text/css" href="styles/index.css"&gt;
+				</p>
+				
+				<header>
+					<h2>
+						The Basic Structure and Syntax of CSS
+					</h2>
+				</header>
+				
+				<p> 
+					To style your HTML elements, you first choose them with a CSS selector. For example, 
+					the following CSS selects all the paragraps in a document, where no other rule is applied.<br> 
+					<br>
+					p{<br>
+					}
+				</p>
+				<p>
+					The script above will identify all elements on a certain level, for example all paragraphs. If you just want 
+					to choose certain paragraphs, you will have to use a class selector. You could, for example, create a 
+					classstyle called  .address, and apply it to all paragraphs consisting of an address.
+				</p>
+					
+				<p>
+				The following syntax identifies that have a certain attribute with a certain value - all input that has 
+				the type text. This is very useful for presenting input in forms. 
+					<br>
+				<br>
+					input[type="text"]{<br>
+					}
+				</p>
+                
+				<p>
+					You can add properties to the chosen elements, like borders. The following will add 
+					a bottom border, a line under all level 1 headlines: <br>
+				<br>
+					h1{<br>
+					border-bottom: 2px white solid<br>
+				}<br>
+					If you only add a border, without specifictions, a frame around the headline 
+					will be added.
+				<br>
+				</p>
+                
+				<p>
+					The basic structure of HTML pages conssists of a root element that is marked by the 
+					&lt;html&gt; tag. Inside that, there are two branches, the head and the body, which again have branches inside 
+					them. When you choose to give a certain feature to a branch, everything inside that branch inherits the feature too. For example, 
+					every table row is a child to the table body and inherits features from it, if you haven´t told it anything else.
+					The table body, in turn, is a child of the table. You could use CSS selectors to choose specific children and 
+					grandchildren, and give them features. 
+					The following CSS chooses the HTML element and adds a background picture to it. <br>
+				<br>
+				html {<br>
+					background-image: url("../images/Wood.jpg");<br>
+					}
+				</p>
+                
+				<p>
+				The selector body &gt; p selects any paragraph element 
+				that is a child of the body. For example, "details &gt; p" chooses every paragraph that is a child of a detail 
+				element. The following syntax chooses every even row in a table and gives it an orange color.<br>
+				<br>
+				tr:nth-child(even){<br>
+					background-color:orange;<br>
+					}
+				</p>
+				
+				<p class="note"><strong>NOTE:</strong> 	A CSS document concists of selectors, 
+				each one followed by curly brackets. The selector chooses one or more elements in HTML that you want to apply 
+				that style to, and then you define the style inside the brackets. The selectors can select tags, attributes, classes, 
+				ID´s or certain children in the hierarchy. 
+				</p>
+        </section>
+            
+		<section>
+			<header>
+                <h2>The measuring units in CSS</h2>
+            </header>
+			
+			     <p>
+				    CSS has many units for measuring. CSS has no particular restrictions, so you can normally choose freely which element 
+				    you want to use. Some units are absolute, which means that they mean the same thing everywhere, inside and outside 
+				    of CSS. Some are relative, which means they will be adapted to the context, for example depending on wheter you use 
+				    a mobile phone for viewing them, a small laptop or a stationary computer. This explains why absolute units are not necessarily
+				    very useful.
+                </p>
+            </section>
+			
+			<header>
+                <h3>Absolute Units</h3>h3>
+            </header>header>
+			
+			<p>
+				An example of a unit is the pixel, px. This is basically a minimal point on the screen. CSS defines it as 
+				1/96 of an inch in a printed version of the document. Other absolute measurement units are cm, mm, in, 
+				which mean the same thing they would outside CSS - different length units. The unit pt stands for points 
+				(1/72 of an inch), and pc for picas (1pc = 12 pt).
+            </p>
+			
+			<header>
+				<h3>Absolute Units</h3>
+            </header>
+			
+			<p>
+				An example of a relative unit is em, which is simply the font size. 
+            </p>
+			
+			<p>
+				A rarely used unit is ex, which means "relative to the current font´s x-height".
+			</p>
+    </article>
+	
+	<footer>
+		Posted by: Ella Elonen
+		<a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	</footer>
+
+	<details>
+		<summary> Copyright 2018-2021.</summary>
+		<p> by Ella Elonen.</p>
+		<p>All content on this site can be shared according to the GNU General Public license</p>
+	</details>
+	</div>
+	</body>
+ </html>
+
+

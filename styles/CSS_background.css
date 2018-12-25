@@ -11,7 +11,7 @@
   
   p {
     color: brown; 
-    font-family: Times New Roman, Arial;
+    font-family: "Times New Roman", Arial;
     font-size: 1.5em;
 	padding: 20px;
 	background-color:khaki;
@@ -21,7 +21,7 @@
  
   h1, h2, h3 {
     color: wheat;
-    font-family: Batang, Times New Roman;
+    font-family: Batang, "Times New Roman";
     border-bottom: 2px;
     padding-top: 10px;
     padding-bottom: 10px;  
@@ -63,7 +63,7 @@
     text-decoration: none;
     font-size: 25px;
     color:khaki;
-    display: khaki;
+    display: block;
     transition: 0.3s;
 }
 
@@ -93,14 +93,12 @@
   
   footer p {
     color: maroon;
-    font-family: Batang, Times New Roman;
-    font-size: 00,5em;
+    font-family: Batang, "Times New Roman";
   }
   
   details p {
     color: maroon;
-    font-family: Batang, Times New Roman;
-    font-size: 00,5em;
+    font-family: Batang, "Times New Roman";
   }
   
   .greenyellow{
@@ -115,7 +113,6 @@
   }
   
   ul{
-	  font-style: Times New Roman, Arial;
 	  padding: 20px;
 	  color:wheat;
 	  background-image: url("../images/GreenLeaves.jpg");
@@ -144,10 +141,10 @@
 	height:100%;
 	width:100%;
 	padding-right:0px;
- }*/
+ }
  
  div.polaroid {
-	 font-size:2em;
+    font-size:2em;
 	width: 80%;
 	background-color: wheat;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

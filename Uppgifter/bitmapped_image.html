@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+            <meta charset ="utf-8"> 
+            <meta name="author" content="Ella Elonen">
+            <meta name="description" content="Free Web tutorials">
+            <meta name="keywords" content="HTML">
+            <meta name="generator" content="Visual Studio Code 1.28.2">
+            <meta name="robots" content="noindex, nofollow">
+            <meta http-equiv="refresh" content="3000">
+                
+            <title>Images</title>
+                
+			<link rel="stylesheet" type="text/css" href="styles/JQuery2.css">
+			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+            
+			<script src="scripts/CSS.js"></script>
+    </head>
+
+    <body>
+        <article>
+            <header>
+                <h1>Bitmapped and vector images</h1>   
+            </header>
+            
+            <p>
+                Bitmapped images are based on pixel patterns. This is not the case with vector images; they use mathematical formulas instead. That way they can draw lines, curves and polygons. You can edit the pictures in picture editors by manipulating those.
+            </p>
+            <p>
+                Vector images have some advantages compared to bitmap images. They tend to be smaller, because they do not need to store color information for every pixel, just the mathematical formulas, which take up less space. They are more scalable, because when you change their When a vector image is scaled up, the image is redrawn using the mathematical formula, which gives a smooth result compared to bitmapped images, where the pixels might become visible at the edges. Bitmap formats also have their advantages, though, for example they can have a wide range of color gradations. That´s why many photographs need to be in this format. Vector formats are best for pictures that consist of a few solid colors, like logos.
+            </p>
+            
+            <p>
+                The three popular formats PNG, JPEG, and GIF are bitmap formats. The Scalable Vector Graphics (SVG) is the most popular of vector formats, and supported by major browsers today. On this page, we´ll go through some of the possibilities of bitmapped images. If you´re interesting in seeing examples of what you can do with vector images, see some examples <a href="vector_image.html">here</a>.
+            </p>           
+                
+            <header>
+                <h2>Bitmapped images</h2>
+            </header>
+            
+            <p>
+                A bitmapped image is basically consists of a big amount of points, each specifying a color. Bitmapped images are easy to handle in most editors, and preserve the shades in the picture well. They are easy to add with the image tag. The bitmapped image below was added with this code:
+            </p>
+            
+            <pre>
+                &lt;img src="images/Sunset.jpg" class="Sunset" width="284" height="213" alt="Sunset"&gt;
+           </pre>
+            
+            <p>
+                Bitmapped images are normally surrounded by the image tag img. However, HTML5 also has the picture tag, that gives more flexibility, like being able to specify different image sources. The semantic tag figure can surround the image and a figcaption.
+                Here is an example of a popular image format, jpg. You can see pixels at the edge of two colors, illustrating the downside of bitmapped images, but the shades are shown accurately.
+            </p>
+            
+            <figure>
+                <figcaption>
+                    This is an example of a bitmapped image. 
+                </figcaption>
+                <img src="images/Sunset.jpg" class="Sunset" width="284" height="213" alt="Sunset"><br>
+            </figure>
+            
+            <figure>
+                <figcaption>
+                    Image from: http://bestanimations.com/Animals/Birds/Birds.html
+                </figcaption>
+                <img src="images/Giffie.gif" width="284" height="213" alt="Bird"><br>
+            </figure>
+        </article>
+            
+	   <footer>
+		  Posted by: Ella Elonen
+		  <a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	   </footer>
+
+	   <details>
+		  <summary> Copyright 2018-2021.</summary>
+		  <p> by Ella Elonen.</p>
+		  <p>All content on this site can be shared according to the GNU General Public license</p>
+	   </details>
+        
+        <script src="scripts/CoolJS_template.js"</script>
+    </body>
+</html>

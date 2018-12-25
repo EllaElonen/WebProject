@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+            <meta charset ="utf-8"> 
+            <meta name="author" content="Ella Elonen">
+            <meta name="description" content="Free Web tutorials">
+            <meta name="keywords" content="HTML">
+            <meta name="generator" content="Visual Studio Code 1.28.2">
+            <meta name="robots" content="noindex, nofollow">
+            <meta http-equiv="refresh" content="3000">
+                
+            <title>Images</title>
+                
+			<link rel="stylesheet" type="text/css" href="styles/JQuery2.css">
+			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+            
+			<script src="scripts/CSS.js"></script>
+    </head>
+
+    <body>
+        <article>
+            <header>
+                <h1>Vector images</h1>   
+            </header>
+            
+            <header>
+                <h2>Converting a bitmapped image into svg</h2>
+            </header>
+             
+            <p>
+                There are many ways of adding an svg image to your site. To begin with, you could convert a bitmapped image to svg. Certain image editing programs allow you to export a bitmaped image as a vector image. Inkscape was used to convert the following image to svg format. You may want to have a bitmapped image as a backup for browsers that do not support svg, like in this example. 
+             </p>
+            
+            <pre>
+                &lt;object data="images/Dreaming.svg" width="300" height="100" type="image/svg+xml"&gt;
+                    &lt;img src="images/Dreaming.jpg" alt="Dreaming"/&gt;
+                &lt;object&gt;
+           </pre>
+            
+             <figure>
+                <figcaption>A bitmapped image converted to an svg image.</figcaption>
+                <object data="images/Dreaming.svg" width="300" height="100" type="image/svg+xml">
+                     <img src="images/Dreaming.jpg" alt="Dreaming"/>
+                </object>
+            </figure>
+            
+            <header>
+                <h2>Drawing an svg image in HTML</h2>
+            </header>
+            
+            <p>
+                You can also draw your own svg image. For example: 
+            </p>
+        
+            <figure>
+                <figcaption>A vector image drawn in HTML.</figcaption>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="pink" stroke-width="4" fill="blue"/>
+                </svg>
+            </figure>
+            
+            <p>
+                The example above illustrates how you can draw shapes in your svg drawing. Other options besides circle are rectangle, ellipse, line, polyline, polygon and path. You can fill the shapes with color, and stroke the lines and curves with color. 
+            </p>
+        
+            <p>
+                The following is another example that draws a rectangle with rounded corners, and also illustrates how you can fill the shape with opacity, which makes it more transparent. The color is the same in both of these figures. Here, the width and height is also increased. 
+            </p>
+        
+            <pre>
+                &lt;svg width="400" height="180"&gt;
+                    &lt;rect x="50" y="20" rx="20" ry="20" width="150" height="150" fill="blue" stroke="pink" stroke-width="4" fill-opacity="0.1" fill-opacity="0.9"/&gt;
+                &lt;/svg&gt;
+            </pre>
+        
+            <figure>
+                <figcaption>One more vector image drawn in HTML.</figcaption>
+                <svg width="400" height="180">
+                    <rect x="50" y="20" rx="20" ry="20" width="150" height="150" fill="blue" stroke="pink" stroke-width="4" fill-opacity="0.1" fill-opacity="0.9"/>
+                </svg> 
+            </figure>
+            
+            <p>
+                The path tag can be used for drawing different kinds of lines and curves. This is an example of two staight lines and a bezier curve filled with blue.
+            </p>
+            
+            <svg height="400" width="450">
+                <path id="lineAB" d="M 100 350 l 150 -300" stroke="green"
+                    stroke-width="3" fill="none"/>
+                <path id="lineBC" d="M 250 50 l 150 300" stroke="green"
+                    stroke-width="3" fill="none"/>
+                <path d="M 100 350 q 150 -300 300 0" stroke="blue"
+                    stroke-width="10" fill="blue"/>
+            </svg> 
+            
+            <header>
+                <h2>Gradients</h2>
+            </header>
+            
+            <p>The following is an example of a linear gradient. Each color is specified in a stop tag with an offset attribute, defining where the color should begin and end. </p>
+            
+            <figure>
+                 <svg height="150" width="400">
+                    <defs>
+                        <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:red;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:blue;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)" />
+                </svg> 
+            </figure>
+            
+            <header>
+                <h2>Adding filters to your svg image</h2>
+            </header>
+        
+            <p>
+                There are lots of filters you can apply to your svg image. Here are just a couple of examples. For a more comprehensive tutorial, see for example W3Scools, that has a full list with examples. The first one utilises the feGaussianBlur, and the second  feOffset and feBlend.
+            </p>
+        
+            <figure>
+                <figcaption>Vector images with filters.</figcaption>
+                <svg height="120" width="120">
+                    <defs>
+                        <filter id="f1" x="0" y="0" width="150%" height="150%">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+                        </filter>
+                    </defs>
+                    <rect width="90" height="90" stroke="pink" stroke-width="3" fill="blue" filter="url(#f1)"/>
+                </svg> 
+         
+                <svg height="120" width="120">
+                    <defs>
+                        <filter id="f2" x="0" y="0" width="200%" height="200%">
+                            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20"/>
+                            <feBlend in="SourceGraphic" in2="offOut" mode="normal"/>
+                        </filter>
+                    </defs>
+                    <rect width="90" height="90" stroke="pink" stroke-width="3"
+                    fill="blue" filter="url(#f2)"/>
+                </svg> 
+            </figure>
+            
+            <h2>Adding text to your svg image</h2>
+            
+            <p>
+                If you want to add text to your image, you should place both the text and the image into a group element inside the svg element. The result can look like this:
+            </p>
+            
+            <figure>
+                <figcaption>A vector image with text.</figcaption>
+                <svg>
+                    <g>
+                        <rect x="0" y="0" width="70" height="70" fill="red"></rect>
+                        <text x="0" y="30" font-family="Times" font-size="20" fill="blue">Text</text>
+                    </g>
+                </svg>
+            </figure>
+            
+            <h2>Transformations</h2>
+            
+            <p>
+                The transform attribute enables you to transform the picture into another picture. For example, a shadow or a tail to a heart, like below.
+            </p>
+            
+            <figure>
+                <figcaption>Vector images with transformations.</figcaption>
+                
+                <svg viewBox="-40 0 150 20" >
+                    <g fill="grey"
+                        transform="rotate(-10 50 100)
+                            translate(-1 4.5)
+                            skewX(40)
+                            scale(1 0.5)">
+                        <path id="heart" d="M 1,3 A 2,2 0,0,1 5,3 A 2,2 0,0,1 9,3 Q 9,6 5,9 Q 1,6 1,3 z"/>
+                    </g>
+                    <use xlink:href="#heart" fill="red" stroke="none"/>
+                </svg>
+     
+                <svg viewBox="-10 0 200 100">
+                    <g fill="pink"
+                        transform="rotate(-10 50 100)
+                                translate(-0,1 0,1)
+                                skewX(40)
+                                scale(1 0.5)">
+                        <path id="heart2" d="M 1,3 A 2,2 0,0,1 5,3 A 2,2 0,0,1 9,3 Q 9,6 25,70 Q 1,6 1,3 z"/>
+                    </g>
+                    <use xlink:href="#heart" fill="none" stroke="red"/>
+                </svg>
+            </figure>
+        </article>
+            
+	   <footer>
+		  Posted by: Ella Elonen
+		  <a href="mailto:ellaelonen@yahoo.se">Contact</a>.
+	   </footer>
+
+	   <details>
+		  <summary> Copyright 2018-2021.</summary>
+		  <p> by Ella Elonen.</p>
+		  <p>All content on this site can be shared according to the GNU General Public license</p>
+	   </details>
+        
+        <script src="scripts/CoolJS_template.js"</script>
+    </body>
+</html>

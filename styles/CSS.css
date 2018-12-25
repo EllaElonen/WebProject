@@ -97,7 +97,7 @@ html {
     text-decoration: none;
     font-size: 25px;
     color:khaki;
-    display: khaki;
+    display: block;
     transition: 0.3s;
 }
 
@@ -129,12 +129,10 @@ html {
     background-color:darkturquoise;
     color: maroon;
     font-family: Batang;
-    font-size: 00,5em;
   }
   
   details p {
     background-color:darkturquoise;
     color: maroon;
     font-family: Batang;
-    font-size: 00,5em;
   }

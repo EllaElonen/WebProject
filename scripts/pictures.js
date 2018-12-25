@@ -1,34 +1,30 @@
-$(document).ready(function(){
+    $(document).ready(function(){
     $(".change").click(function(){
         $("img.sunset").attr("width", "500");
     });
     
-     $(".revert").click(function(){
+    $(".revert").click(function(){
         $("img.sunset").attr("width", "290");
     });
-
-$("myCanvas").click(function() {
-    $(this).animate({
-        "margin-left": 200
-    }, 2000, $.bez([0.685, 0.595, 0.020, 0.720]));
     
-     var bezier_params = {
-        start: {
-            x: 185,
-            y: 185,
-            angle: 10
-        },
-        end: {
-            x:540,
-            y:110,
-            angle: -10,
-            length: 0.25
-        }
-    };
-
-    $("my_elem").animate({path : new $.path.bezier(bezier_params)});
+    $(".swap").click(function(){
+        $("#sunset").attr('src', 'images/WhiteFlower.png')
     });
 });
+
+/*function saveImage(){
+    document.getElementById("downloader").download = "image.png";
+    document.getElementById("downloader").href = document.getElementById("myCanvas").toDataURL("image/png").replace(/^data:image\/[^;]/, 'data:application/octet-stream');
+}*/
+    
+function drawBezier(){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(20, 20);
+    ctx.bezierCurveTo(20, 100, 200, 100, 200, 20);
+    ctx.stroke();
+}
 
 function drawLine(){
     var c = document.getElementById("myCanvas");
@@ -59,7 +55,6 @@ function drawGradient(){
     ctx.fillRect(10, 10, 150, 80); 
 }
 
-//TODO
 function drawShadow(){
     var canvas = document.getElementById('myCanvas');
     context = canvas.getContext('2d');
@@ -86,8 +81,8 @@ function drawCircle(){
 
 //TODO, add opacity
 function drawImage(){
-    var canvas = document.getElementById("myCanvas");     
-    var context = canvas.getContext("2d");
+    var myCanvas = document.getElementById("myCanvas");     
+    var context = myCanvas.getContext("2d");
     context.globalAlpha = 0.5;
     var myImage = new Image();
     myImage.src = "Sunset.jpg";
@@ -111,14 +106,9 @@ if (canvas.getContext)
 }
 
 //TODO
-function putImage()
-{
-  var canvas1 = document.getElementById("canvasSignature");        
-  if (canvas1.getContext) {
-     var ctx = canvas1.getContext("2d");                
-     var myImage = canvas1.toDataURL("images/Magnolia.png");      
-  }
-  var imageElement = document.getElementById("MyPix");  
-  imageElement.src = myImage;                           
-
+function saveImage(){
+    var download = document.getElementById("download");
+    var image = document.getElementById("myCanvas").toDataURL("image/png")
+    .replace("image/png", "image/octet-stream");
+    download.setAttribute("href", image);                         
 }  

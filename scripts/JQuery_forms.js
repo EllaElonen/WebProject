@@ -2,7 +2,7 @@
 /*$(document).ready(function() {
 	$('h1').hide().slideDown(3000);
 	$('.corner-image').hide().slideDown(3000);
-});*/
+});
 
 $(document).ready(function(){
     $("button").click(function(){
@@ -121,6 +121,44 @@ $(document).ready(function(){
         $("p").off("click");
     });
 });
+*/
+
+/*$(document).ready(function () {
+
+    $('#myform').validate({ // initialize the plugin
+        rules: {
+            field1: {
+                required: true,
+                alphanumeric
+            },
+            field2: {
+                required: true,
+                alphanumeric
+            },
+            field3{
+            email: true,
+            required: true,
+            minlength: 5
+        }
+    });*/
+
+   $(document).ready(function(){
+    $('#myform').validate({
+    rules :{
+        "data[username][password]" : {
+            required : true
+        }
+    },
+    messages :{
+        "data[username][password]" : {
+            required : 'Fill the obligatory fields'
+        }
+    }
+    });
+});
+
+
+
 
 
 

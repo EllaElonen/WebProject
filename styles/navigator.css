@@ -8,9 +8,9 @@ html{
 
 body {
     margin: 2em;
-    color:balck;
+    color:black;
     font-family: Times, Helvetica, sans-serif;
-	size: A4 portrait;
+	resize: A4 portrait;
 }
 
 p{
@@ -61,7 +61,7 @@ h2{
 
 h3{
     font-family: Arial, Helvetica, sans-serif;
-	color: medium-orchid;
+	color: mediumorchid;
 	padding-left: 20em;
 }
 
@@ -313,7 +313,7 @@ div{
 #myInput{
 	font-size: 1em;
 	height: 2px;
-	width: 20 px;
+	width: 20px;
 }
 
 body {
@@ -394,7 +394,3 @@ a {
     
 }
 
-function getProtocol() {
-    var x = location.protocol;
-    document.getElementById("proto").innerHTML = x;
-}
