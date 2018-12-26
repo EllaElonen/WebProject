@@ -1,0 +1,15 @@
+body{
+    background-color: lavender;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  background: deeppink;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 1s;
+}
+
+div:hover {
+  width: 1000px;
+}
