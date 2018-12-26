@@ -1,0 +1,15 @@
+body{
+    background: yellowgreen;
+}
+
+img{
+    width: 80%;
+}
+
+figure{
+    width 30%;
+}
+
+header, footer, details{
+    background-color: greenyellow;
+}
